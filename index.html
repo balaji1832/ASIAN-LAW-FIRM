@@ -1,0 +1,984 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asian Law Firm</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-white">
+    <!-- Header Start -->
+    <header class="w-full bg-white border-b border-gray-100 sticky top-0 z-50">
+      <div class="max-w-[1600px] mx-auto px-5 sm:px-8 lg:px-16">
+        <div class="flex items-center justify-between h-[78px]">
+          <!-- Logo -->
+          <a href="#" class="flex items-center">
+            <!-- Replace this with your logo -->
+            <!-- <img src="your-logo.png" alt="Turist Logo" class="h-[42px] w-auto"> -->
+
+            <!-- Text logo only for demo -->
+            <div
+              class="logo-font text-[42px] leading-none tracking-[-1px] text-[#082b2c]"
+            >
+              <span class="text-[#c59a35]">A</span>sian Law Firm
+            </div>
+          </a>
+
+          <!-- Desktop Menu -->
+          <nav
+            class="hidden lg:flex items-center gap-[42px] text-[#082b2c] font-semibold text-[18px] tracking-[0.2px]"
+          >
+            <a
+              href="#"
+              class="flex items-center gap-2 hover:text-[#c59a35] transition-colors duration-300"
+            >
+              Home
+            </a>
+
+            <a
+              href="#"
+              class="flex items-center gap-2 hover:text-[#c59a35] transition-colors duration-300"
+            >
+              Practice areas
+            </a>
+
+            <a
+              href="#"
+              class="flex items-center gap-2 hover:text-[#c59a35] transition-colors duration-300"
+            >
+              Pages
+            </a>
+
+            <a
+              href="#"
+              class="flex items-center gap-2 hover:text-[#c59a35] transition-colors duration-300"
+            >
+              Blog
+            </a>
+
+            <a
+              href="#"
+              class="hover:text-[#c59a35] transition-colors duration-300"
+            >
+              Contact Us
+            </a>
+          </nav>
+
+          <!-- Mobile Button -->
+          <button
+            id="menuBtn"
+            class="lg:hidden flex items-center justify-center w-11 h-11 rounded-md border border-gray-200 text-[#082b2c]"
+            aria-label="Open menu"
+          >
+            <svg
+              id="menuIcon"
+              class="w-6 h-6 block"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 7h16M4 12h16M4 17h16"
+              />
+            </svg>
+
+            <svg
+              id="closeIcon"
+              class="w-6 h-6 hidden"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="lg:hidden hidden bg-white border-t border-gray-100"
+      >
+        <nav
+          class="px-5 sm:px-8 py-5 space-y-1 text-[#082b2c] font-semibold text-[16px]"
+        >
+          <a
+            href="#"
+            class="flex items-center justify-between py-3 border-b border-gray-100"
+          >
+            Home
+          </a>
+
+          <a
+            href="#"
+            class="flex items-center justify-between py-3 border-b border-gray-100"
+          >
+            Practice areas
+          </a>
+
+          <a
+            href="#"
+            class="flex items-center justify-between py-3 border-b border-gray-100"
+          >
+            Pages
+          </a>
+
+          <a
+            href="#"
+            class="flex items-center justify-between py-3 border-b border-gray-100"
+          >
+            Blog
+          </a>
+
+          <a href="#" class="block py-3"> Contact Us </a>
+        </nav>
+      </div>
+    </header>
+    <!-- Header End -->
+    <main>
+      <!-- Trusted Lawyer Sticky Reveal Section -->
+      <section class="trusted-reveal-section bg-white">
+        <!-- Scroll height controls animation duration -->
+        <div class="trusted-reveal-space relative h-[175vh]">
+          <!-- Sticky screen -->
+          <div
+            class="trusted-reveal-sticky sticky top-0 h-screen overflow-hidden flex items-center justify-center"
+          >
+            <!-- Text Content -->
+            <div
+              id="trustedRevealText"
+              class="absolute top-[9%] sm:top-[10%] left-1/2 z-30 w-full max-w-[1150px] -translate-x-1/2 px-5 text-center"
+            >
+              <p
+                class="mx-auto fade-in max-w-[760px] font-serif text-[#042427] text-[18px] sm:text-[22px] md:text-[25px] lg:text-[28px] leading-[1.18] tracking-[-0.3px] mb-5 sm:mb-7"
+              >
+                Our experienced team is committed to providing clear legal
+                guidance and professional representation in a straightforward
+                and efficient manner.
+              </p>
+
+              <h1
+                class="font-serif fade-left uppercase text-[#042427] font-medium leading-[0.92] tracking-[-1px] sm:tracking-[-1.5px] text-[38px] sm:text-[54px] md:text-[72px] lg:text-[92px] xl:text-[108px]"
+              >
+                Your Trusted <br />
+                Lawyer In Chennai
+              </h1>
+
+              <!-- Button -->
+              <a
+                href="#contact"
+                class="mt-6 sm:mt-8 inline-flex fade-up items-center justify-center bg-[#c7a84a] text-white rounded-[9px] px-7 sm:px-9 py-3 sm:py-3.5 text-[14px] sm:text-[15px] font-semibold hover:bg-[#b89635] hover:-translate-y-[2px] transition-all duration-300"
+              >
+                Book Your Consultation
+              </a>
+            </div>
+
+            <!-- Image comes from bottom -->
+            <div
+              id="trustedRevealImage"
+              class="absolute left-1/2 bottom-[-66%] z-20 w-full max-w-[1728px] -translate-x-1/2 px-4 sm:px-6 lg:px-[58px]"
+            >
+              <div
+                class="w-full overflow-hidden rounded-[18px] sm:rounded-[22px]"
+              >
+                <img
+                  src="images/banner.jpg"
+                  alt="Trusted legal team"
+                  class="w-full h-[260px] sm:h-[360px] md:h-[440px] lg:h-[520px] xl:h-[610px] object-cover object-center"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT ASIAN LAW FIRM - IMAGE RIGHT COMPACT STYLE -->
+      <section
+        class="relative overflow-hidden bg-[#063536] py-12 sm:py-14 lg:py-16 mt-5"
+      >
+        <!-- Background Pattern -->
+        <div class="pointer-events-none absolute inset-0 opacity-[0.07]">
+          <div
+            class="absolute left-[-120px] top-[-120px] h-[320px] w-[320px] rounded-full border border-[#c7a84a]"
+          ></div>
+          <div
+            class="absolute right-[-140px] bottom-[-140px] h-[360px] w-[360px] rounded-full border border-[#c7a84a]"
+          ></div>
+        </div>
+
+        <div class="relative z-10 mx-auto max-w-[1320px] px-5 sm:px-8 lg:px-10">
+          <div
+            class="grid grid-cols-1 items-center gap-10 lg:grid-cols-[1.14fr_0.86fr] lg:gap-14"
+          >
+            <!-- LEFT CONTENT SIDE -->
+            <div class="flex flex-col justify-center order-2 lg:order-1">
+              <div class="mb-4 flex items-center gap-4">
+                <span class="h-px w-10 bg-[#c7a84a]"></span>
+                <span
+                  class="text-[11px] letter-reveal font-bold uppercase tracking-[3px] text-[#c7a84a]"
+                >
+                  About Asian Law Firm
+                </span>
+              </div>
+
+              <h2
+                class="max-w-[760px] fade-in font-serif text-[38px] font-semibold leading-[0.95] tracking-[-1px] text-white sm:text-[50px] lg:text-[62px]"
+              >
+                Legal clarity for property, business, and intellectual rights.
+              </h2>
+
+              <p
+                class="mt-5 max-w-[760px] fade-right text-[15px] font-medium leading-[1.8] text-[#bfd0d0] sm:text-[16px]"
+              >
+                ‘Asian Law Firm’ is a trusted legal firm in Chennai committed to
+                protecting the rights of individuals, businesses, and property
+                investors. We provide clear guidance, practical legal solutions,
+                and professional representation in Property Law, Corporate Law,
+                and Intellectual Property Law with integrity, transparency, and
+                personalized support that gives clients confidence and peace of
+                mind.
+              </p>
+
+              <!-- Quote -->
+              <div
+                class="mt-6 rounded-[22px] fade-down border-l-[4px] border-[#c7a84a] bg-white/[0.06] p-5 sm:p-6"
+              >
+                <p
+                  class="font-serif text-[22px] leading-[1.25] text-white sm:text-[26px]"
+                >
+                  “Professional legal support built on trust, transparency, and
+                  practical solutions.”
+                </p>
+              </div>
+
+              <!-- THREE HIGHLIGHT BOXES -->
+              <div class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
+                <!-- Card 1 -->
+                <div
+                  class="group rounded-[20px] fade-up border border-white/10 bg-white/[0.06] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[#c7a84a]/60 hover:bg-white/[0.09]"
+                >
+                  <div
+                    class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-[#c7a84a] text-[#063536]"
+                  >
+                    <svg
+                      class="h-5 w-5"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M3 21h18M6 21V9l6-4 6 4v12M9 21v-6h6v6"
+                      />
+                    </svg>
+                  </div>
+
+                  <h3
+                    class="font-serif text-[22px] font-semibold leading-tight text-white"
+                  >
+                    Property Law
+                  </h3>
+
+                  <p class="mt-2 text-[13px] leading-[1.65] text-[#bfd0d0]">
+                    Guidance for property rights, documentation, and investor
+                    protection.
+                  </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                  class="group fade-down rounded-[20px] border border-white/10 bg-white/[0.06] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[#c7a84a]/60 hover:bg-white/[0.09]"
+                >
+                  <div
+                    class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-[#c7a84a] text-[#063536]"
+                  >
+                    <svg
+                      class="h-5 w-5"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4 7h16M7 7V5h10v2M6 7v13h12V7"
+                      />
+                    </svg>
+                  </div>
+
+                  <h3
+                    class="font-serif text-[22px] font-semibold leading-tight text-white"
+                  >
+                    Corporate Law
+                  </h3>
+
+                  <p class="mt-2 text-[13px] leading-[1.65] text-[#bfd0d0]">
+                    Support for businesses, agreements, and compliance.
+                  </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                  class="group fade-up rounded-[20px] border border-white/10 bg-white/[0.06] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[#c7a84a]/60 hover:bg-white/[0.09]"
+                >
+                  <div
+                    class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-[#c7a84a] text-[#063536]"
+                  >
+                    <svg
+                      class="h-5 w-5"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 3a4 4 0 014 4c0 2.5-4 7-4 7s-4-4.5-4-7a4 4 0 014-4z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 14v7M8 18h8"
+                      />
+                    </svg>
+                  </div>
+
+                  <h3
+                    class="font-serif text-[22px] font-semibold leading-tight text-white"
+                  >
+                    IP Law
+                  </h3>
+
+                  <p class="mt-2 text-[13px] leading-[1.65] text-[#bfd0d0]">
+                    Protection for brands, creative assets, and ownership.
+                  </p>
+                </div>
+              </div>
+
+              <!-- CTA -->
+              <div class="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
+                <a
+                  href="#contact"
+                  class="inline-flex fade-left w-fit items-center justify-center rounded-full bg-[#c7a84a] px-7 py-3 text-[13px] font-bold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#b89635]"
+                >
+                  Book Your Consultation
+                </a>
+
+                <a
+                  href="#practice"
+                  class="inline-flex fade-right w-fit items-center justify-center rounded-full border border-white/20 px-7 py-3 text-[13px] font-bold text-white transition-all duration-300 hover:border-[#c7a84a] hover:text-[#c7a84a]"
+                >
+                  View Practice Areas
+                </a>
+              </div>
+            </div>
+
+            <!-- RIGHT IMAGE SIDE -->
+            <div class="relative order-1 lg:order-2">
+              <div
+                class="relative fade-up overflow-hidden rounded-t-[130px] rounded-b-[28px] border border-[#c7a84a]/35 bg-white/5 p-2.5"
+              >
+                <img
+                  src="images/about.jpg"
+                  alt="About Asian Law Firm"
+                  class="h-[360px]  w-full rounded-t-[118px] rounded-b-[22px] object-cover object-center sm:h-[450px] lg:h-[560px]"
+                />
+
+                <div
+                  class="absolute inset-2.5 rounded-t-[118px] rounded-b-[22px] bg-gradient-to-t from-[#063536]/70 via-transparent to-transparent"
+                ></div>
+
+                <!-- Badge inside image -->
+                <div
+                  class="absolute  bottom-6 left-1/2 w-[82%] -translate-x-1/2 rounded-[20px] border border-white/15 bg-[#063536]/45 p-4 text-center backdrop-blur-xl"
+                >
+                  <h3
+                    class="font-serif text-[30px] font-semibold leading-none text-white sm:text-[34px]"
+                  >
+                    Trusted
+                  </h3>
+                  <p
+                    class="mt-1.5 text-[11px] font-bold uppercase tracking-[2px] text-[#f0d27a]"
+                  >
+                    Legal Guidance In Chennai
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT MANAGING ASSOCIATE - MODERN PROFILE DESIGN -->
+      <section
+        class="relative overflow-hidden bg-[#f6f2e9] py-14 sm:py-16 lg:py-20"
+      >
+        <!-- Background Decorative Text -->
+        <div class="pointer-events-none absolute -left-6 top-8 hidden lg:block">
+          <h2
+            class="font-serif fade-in ms-6 text-[150px] font-semibold leading-none text-[#063536]/[0.05]"
+          >
+            Associate
+          </h2>
+        </div>
+
+        <div class="relative z-10 mx-auto max-w-[1320px] px-5 sm:px-8 lg:px-10">
+          <div
+            class="grid grid-cols-1 items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14"
+          >
+            <!-- LEFT CONTENT -->
+            <div class="relative">
+              <!-- Small Label -->
+              <div class="mb-5 flex items-center gap-4">
+                <span class="h-px w-12 bg-[#c7a84a]"></span>
+                <span
+                  class="text-[12px] fade-left font-bold uppercase tracking-[3px] text-[#c7a84a]"
+                >
+                  About Managing Associate
+                </span>
+              </div>
+
+              <!-- Main Name -->
+              <h2
+                class="max-w-[760px] fade-right font-serif text-[42px] font-semibold leading-[0.98] tracking-[-1px] text-[#063536] sm:text-[58px] lg:text-[76px]"
+              >
+                Adv. J. Amirdeen
+              </h2>
+
+              <!-- Qualification Pill -->
+              <div
+                class="mt-5 inline-flex fade-down flex-wrap items-center gap-2 rounded-full border border-[#063536]/10 bg-white px-5 py-3 shadow-[0_12px_35px_rgba(6,53,54,0.08)]"
+              >
+                <span
+                  class="text-[13px] font-bold uppercase tracking-[2px] text-[#063536]"
+                >
+                  M.B.A. (Fin)
+                </span>
+                <span class="h-1.5 w-1.5 rounded-full bg-[#c7a84a]"></span>
+                <span
+                  class="text-[13px] font-bold uppercase tracking-[2px] text-[#063536]"
+                >
+                  LL.B. (Hons)
+                </span>
+              </div>
+
+              <!-- Content Box -->
+              <div
+                class="mt-8 max-w-[820px] rounded-[28px] border border-[#063536]/10 bg-white p-6 sm:p-8 shadow-[0_24px_70px_rgba(6,53,54,0.10)]"
+              >
+                <p
+                  class="text-[17px] fade-left font-medium leading-[1.9] text-[#4f6364] sm:text-[18px]"
+                >
+                  Adv. J. Amirdeen, M.B.A. (Fin), LL.B. (Hons), is a legal
+                  professional with over a decade of experience in property
+                  documentation, registration and related legal services. He
+                  provides practical legal guidance with a professional
+                  background in commerce, finance, and law, with a focus on
+                  clarity and professionalism.
+                </p>
+              </div>
+
+              <!-- Bottom Highlights -->
+              <div class="mt-6 grid fade-up grid-cols-1 gap-4 sm:grid-cols-3">
+                <div
+                  class="rounded-[22px] border border-[#063536]/10 bg-white/70 p-5"
+                >
+                  <h3
+                    class="font-serif text-[34px] font-semibold leading-none text-[#063536]"
+                  >
+                    10+
+                  </h3>
+                  <p
+                    class="mt-2 text-[13px] font-bold uppercase tracking-[1.5px] text-[#7b8b8c]"
+                  >
+                    Years Experience
+                  </p>
+                </div>
+
+                <div
+                  class="rounded-[22px] border border-[#063536]/10 bg-white/70 p-5"
+                >
+                  <h3
+                    class="font-serif text-[26px] font-semibold leading-none text-[#063536]"
+                  >
+                    Property
+                  </h3>
+                  <p
+                    class="mt-2 text-[13px] font-bold uppercase tracking-[1.5px] text-[#7b8b8c]"
+                  >
+                    Documentation
+                  </p>
+                </div>
+
+                <div
+                  class="rounded-[22px] border border-[#063536]/10 bg-white/70 p-5"
+                >
+                  <h3
+                    class="font-serif text-[26px] font-semibold leading-none text-[#063536]"
+                  >
+                    Legal
+                  </h3>
+                  <p
+                    class="mt-2 text-[13px] font-bold uppercase tracking-[1.5px] text-[#7b8b8c]"
+                  >
+                    Registration
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT PROFILE VISUAL -->
+            <div class="relative fade-left">
+              <!-- Gold Border Shape -->
+              <div
+                class="absolute -right-4 -top-4 hidden h-full w-full rounded-[36px] border border-[#c7a84a]/50 lg:block"
+              ></div>
+
+              <div
+                class="relative overflow-hidden rounded-[36px] bg-[#063536] p-3 shadow-[0_30px_90px_rgba(6,53,54,0.22)]"
+              >
+                <!-- Replace image here -->
+                <img
+                  src="images/amirdeen.jpg"
+                  alt="Adv. J. Amirdeen"
+                  class="h-[390px] w-full rounded-[28px] object-cover object-center sm:h-[480px] lg:h-[600px]"
+                />
+
+                <!-- Overlay -->
+                <div
+                  class="absolute inset-3 rounded-[28px] bg-gradient-to-t from-[#063536]/85 via-[#063536]/10 to-transparent"
+                ></div>
+
+                <!-- Bottom Text -->
+                <div class="absolute bottom-8 left-8 right-8">
+                  <span
+                    class="inline-flex rounded-full bg-[#c7a84a] px-4 py-2 text-[11px] font-bold uppercase tracking-[2px] text-white"
+                  >
+                    Managing Associate
+                  </span>
+
+                  <h3
+                    class="mt-4 font-serif text-[36px] font-semibold leading-none text-white sm:text-[44px]"
+                  >
+                    Clear. Practical. Professional.
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUR LEGAL SERVICES SECTION -->
+      <section class="legal-services-section fade-in">
+        <div class="legal-services-container">
+          <!-- LEFT STICKY CIRCLE -->
+          <div class="legal-services-left">
+            <div class="legal-circle">
+              <div class="legal-circle-content">
+                <span class="letter-reveal">OUR LEGAL SERVICES</span>
+                <h2 >Areas of Legal Expertise</h2>
+              </div>
+
+              <strong>LAW</strong>
+            </div>
+          </div>
+
+          <!-- RIGHT STICKY STACK CARDS -->
+          <div class="legal-services-right fade-right">
+            <!-- CARD 01 -->
+            <article class="legal-service-card">
+              <div class="legal-card-number">01</div>
+
+              <div class="legal-card-content">
+                <span>PROPERTY DOCUMENTATION SERVICES</span>
+
+                <h3>Property Documentation Services</h3>
+
+                <p>
+                  Professional legal assistance for Property Title Verification,
+                  Legal Opinion, Sale Deed Registration, Partition Deeds,
+                  Settlement Deeds, Gift & Release Deeds, Will, Power of
+                  Attorney, Lease Agreements, Patta Transfer and property
+                  dispute resolution.
+                </p>
+              </div>
+            </article>
+
+            <!-- CARD 02 -->
+            <article class="legal-service-card">
+              <div class="legal-card-number">02</div>
+
+              <div class="legal-card-content">
+                <span>PROPERTY & CIVIL LAW</span>
+
+                <h3>Property & Civil Law</h3>
+
+                <p>
+                  Professional legal assistance relating to property disputes,
+                  civil litigation, contract enforcement, recovery matters, and
+                  other civil law proceedings.
+                </p>
+              </div>
+            </article>
+
+            <!-- CARD 03 -->
+            <article class="legal-service-card">
+              <div class="legal-card-number">03</div>
+
+              <div class="legal-card-content">
+                <span>CORPORATE & COMMERCIAL LAW</span>
+
+                <h3>Corporate & Commercial Law</h3>
+
+                <p>
+                  Professional legal assistance for business formation, company
+                  registration, commercial agreements, corporate compliance,
+                  mergers and acquisitions, and commercial dispute resolution.
+                </p>
+              </div>
+            </article>
+
+            <!-- CARD 04 -->
+            <article class="legal-service-card">
+              <div class="legal-card-number">04</div>
+
+              <div class="legal-card-content">
+                <span>INTELLECTUAL PROPERTY LAW</span>
+
+                <h3>Intellectual Property Law</h3>
+
+                <p>
+                  Professional legal assistance relating to trademark,
+                  copyright, and patent registration, intellectual property
+                  protection and intellectual property dispute resolution.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PREMIUM RUNNING TEXT SECTION -->
+      <section class="premium-marquee-section">
+        <div class="premium-marquee-wrap">
+          <div class="premium-marquee-track">
+            <div class="premium-marquee-group">
+              <span>Professional</span>
+              <em></em>
+              <span>Reliable</span>
+              <em></em>
+              <span>Trusted</span>
+              <em></em>
+            </div>
+
+            <div class="premium-marquee-group" aria-hidden="true">
+              <span>Professional</span>
+              <em></em>
+              <span>Reliable</span>
+              <em></em>
+              <span>Trusted</span>
+              <em></em>
+            </div>
+
+            <div class="premium-marquee-group" aria-hidden="true">
+              <span>Professional</span>
+              <em></em>
+              <span>Reliable</span>
+              <em></em>
+              <span>Trusted</span>
+              <em></em>
+            </div>
+
+            <div class="premium-marquee-group" aria-hidden="true">
+              <span>Professional</span>
+              <em></em>
+              <span>Reliable</span>
+              <em></em>
+              <span>Trusted</span>
+              <em></em>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BLOG SECTION -->
+      <section class="blog-section" id="blog">
+        <div class="blog-container">
+          <!-- Section Header -->
+          <div class="blog-header">
+            <span class="letter-reveal">Blog</span>
+            <h2 class="fade-left">Latest insights from<br />our legal team</h2>
+          </div>
+
+          <!-- Carousel Wrapper -->
+          <div class="blog-carousel-wrapper fade-up">
+            <div class="blog-carousel-track" id="blogCarouselTrack">
+              <!-- Blog Card 01 -->
+              <article class="blog-card">
+                <div class="blog-image">
+                  <img
+                    src="images/blog-1.jpg"
+                    alt="How to choose the right law firm"
+                  />
+                </div>
+
+                <div class="blog-content">
+                  <span class="blog-category">Client Resources</span>
+                  <h3>How to choose the right law firm for your legal needs</h3>
+                  <p>Sep 8, 2025 · No Comments</p>
+                </div>
+              </article>
+
+              <!-- Blog Card 02 -->
+              <article class="blog-card">
+                <div class="blog-image">
+                  <img
+                    src="images/blog-2.jpg"
+                    alt="First meeting with an attorney"
+                  />
+                </div>
+
+                <div class="blog-content">
+                  <span class="blog-category">Criminal Defense</span>
+                  <h3>
+                    What to expect during your first meeting with an attorney
+                  </h3>
+                  <p>Sep 8, 2025 · 2 Comments</p>
+                </div>
+              </article>
+
+              <!-- Blog Card 03 -->
+              <article class="blog-card">
+                <div class="blog-image">
+                  <img
+                    src="images/blog-3.jpg"
+                    alt="Attorney client privilege"
+                  />
+                </div>
+
+                <div class="blog-content">
+                  <span class="blog-category">Estate Law</span>
+                  <h3>
+                    Understanding attorney-client privilege and confidentiality
+                  </h3>
+                  <p>Sep 8, 2025 · No Comments</p>
+                </div>
+              </article>
+
+              <!-- Blog Card 04 -->
+              <article class="blog-card">
+                <div class="blog-image">
+                  <img
+                    src="images/blog-4.jpg"
+                    alt="Strong relationship with your lawyer"
+                  />
+                </div>
+
+                <div class="blog-content">
+                  <span class="blog-category">Business Law</span>
+                  <h3>
+                    Tips for building a strong relationship with your lawyer
+                  </h3>
+                  <p>Sep 8, 2025 · 2 Comments</p>
+                </div>
+              </article>
+
+              <!-- Blog Card 05 -->
+              <article class="blog-card">
+                <div class="blog-image">
+                  <img
+                    src="images/blog-5.jpg"
+                    alt="Property documentation guidance"
+                  />
+                </div>
+
+                <div class="blog-content">
+                  <span class="blog-category">Property Law</span>
+                  <h3>Essential legal checks before property documentation</h3>
+                  <p>Sep 8, 2025 · No Comments</p>
+                </div>
+              </article>
+            </div>
+
+            <!-- Dots -->
+            <div class="blog-dots" id="blogDots"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LEGAL DISCLAIMER SECTION -->
+      <section class="legal-confirm-section">
+        <div class="legal-confirm-container">
+          <div class="legal-confirm-card">
+            <!-- LEFT TITLE PANEL -->
+            <div class="legal-confirm-left ">
+              <span class="letter-reveal">Legal Notice</span>
+
+              <h2 class="fade-in">
+                Legal Disclaimers <br />
+                & Confirmation
+              </h2>
+
+              <div class="legal-confirm-line fade-left"></div>
+            </div>
+
+            <!-- RIGHT CONTENT PANEL -->
+            <div class="legal-confirm-right fade-up">
+              <p>
+                In accordance with the Bar Council of India rules, we are not
+                permitted to solicit work or advertise through this website. The
+                information provided here is for informational purposes only and
+                should not be considered an advertisement, communication,
+                invitation, or request for work.
+              </p>
+
+              <p>
+                Visiting or using this website does not create an
+                attorney-client relationship, and any information provided is
+                not legal advice and should not be relied upon for legal
+                decisions.
+              </p>
+
+              <p>
+                The content on this website is made available solely at the
+                user’s request and should not be viewed as an invitation or
+                promotion to seek legal services.
+              </p>
+
+              <p>
+                If you have a legal issue, we strongly recommend consulting a
+                qualified legal professional for advice.
+              </p>
+
+              <p>
+                The law firm is not responsible for any actions or consequences
+                resulting from the use of information obtained from this
+                website.
+              </p>
+
+              <p>
+                By accessing this website, you acknowledge and accept these
+                terms.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Back To Top Button -->
+<button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M12 5l-7 7 1.4 1.4L11 8.8V20h2V8.8l4.6 4.6L19 12z"></path>
+  </svg>
+</button>
+    </main>
+
+    <!-- ASIAN LAW FIRM FOOTER -->
+    <footer class="asian-footer fade-up">
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <!-- Column 1: Brand -->
+          <div class="footer-col footer-brand-col">
+            <a href="#" class="footer-logo"> <span>A</span>sian Law Firm </a>
+
+            <p class="footer-desc">
+              At Asian Law Firm, We answer your legal queries with clear
+              guidance and reliable legal solutions.
+            </p>
+          </div>
+
+          <!-- Column 2: Office -->
+          <div class="footer-col">
+            <h3 class="footer-heading">Our office</h3>
+
+            <div class="footer-list footer-office-list">
+              <p>
+                Asian Law Firm<br />
+                No. 10/32, Balaji Towers,<br />
+                Thiru vi ka Road, Opp. Sathyam Theatre,<br />
+                Royapettah, Chennai – 600014.
+              </p>
+
+              <a href="mailto:asianlawteam@gmail.com">asianlawteam@gmail.com</a>
+              <a href="mailto:info@asianlawfirm.in">info@asianlawfirm.in</a>
+
+              <a href="tel:+919884313030" class="footer-phone"
+                >+91 98843 13030</a
+              >
+              <a href="tel:+919514622020" class="footer-phone"
+                >+91 95146 22020</a
+              >
+            </div>
+          </div>
+
+          <!-- Column 3: Quick Links -->
+          <div class="footer-col">
+            <h3 class="footer-heading">Quick links</h3>
+
+            <ul class="footer-list footer-bullet-list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Practice</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Follow Us -->
+          <div class="footer-col">
+            <h3 class="footer-heading">Follow us</h3>
+
+            <ul class="footer-list footer-bullet-list">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Youtube</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Center Background Text -->
+      <div class="footer-bg-wrap">
+        <h2>Advisors</h2>
+      </div>
+    </footer>
+
+    <script src="js/hamburger.js"></script>
+    <script src="js/herosection-scroll.js"></script>
+    <script src="js/legalservice-scroll.js"></script>
+    <script src="js/home-blog-carousel.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/arrow.js"></script>
+  </body>
+</html>
