@@ -1,29 +1,95 @@
-  const revealSection = document.querySelector(".trusted-reveal-section");
+  
+document.addEventListener("DOMContentLoaded", function () {
   const revealSpace = document.querySelector(".trusted-reveal-space");
   const revealText = document.getElementById("trustedRevealText");
   const revealImage = document.getElementById("trustedRevealImage");
 
-  function trustedRevealAnimation() {
-    const sectionTop = revealSection.offsetTop;
-    const sectionHeight = revealSpace.offsetHeight;
-    const windowHeight = window.innerHeight;
-    const scrollY = window.scrollY;
+  if (!revealSpace || !revealText || !revealImage) return;
 
-    let progress = (scrollY - sectionTop) / (sectionHeight - windowHeight);
-    progress = Math.min(Math.max(progress, 0), 1);
+  let currentProgress = 0;
+  let targetProgress = 0;
+  let rafId = null;
 
-    // Text moves slightly up and hides
-    const textY = progress * -120;
-    const textOpacity = 1 - progress * 1.35;
-
-    revealText.style.transform = `translateX(-50%) translateY(${textY}px)`;
-    revealText.style.opacity = Math.max(textOpacity, 0);
-
-    // Image comes from bottom smoothly
-    const imageY = progress * -470;
-    revealImage.style.transform = `translateX(-50%) translateY(${imageY}px)`;
+  function clamp(value, min, max) {
+    return Math.min(Math.max(value, min), max);
   }
 
-  window.addEventListener("scroll", trustedRevealAnimation);
-  window.addEventListener("resize", trustedRevealAnimation);
-  trustedRevealAnimation();
+  function easeOutQuart(t) {
+    return 1 - Math.pow(1 - t, 4);
+  }
+
+  function calculateProgress() {
+    const rect = revealSpace.getBoundingClientRect();
+    const totalScroll = revealSpace.offsetHeight - window.innerHeight;
+
+    if (totalScroll <= 0) return 0;
+
+    let progress = -rect.top / totalScroll;
+    return clamp(progress, 0, 1);
+  }
+
+  function animateTrustedReveal() {
+    targetProgress = calculateProgress();
+
+    /*
+      Smooth follow:
+      Lower value = smoother/slower
+      Higher value = faster
+    */
+    currentProgress += (targetProgress - currentProgress) * 0.08;
+
+    const smooth = easeOutQuart(currentProgress);
+
+    /* TEXT */
+    const textMove = window.innerWidth <= 640 ? -95 : -150;
+
+    const fadeStart = 0.05;
+    const fadeEnd = 0.34;
+
+    const fadeProgress = clamp(
+      (currentProgress - fadeStart) / (fadeEnd - fadeStart),
+      0,
+      1
+    );
+
+    revealText.style.transform =
+      `translate3d(-50%, ${smooth * textMove}px, 0)`;
+
+    revealText.style.opacity = 1 - fadeProgress;
+
+    /* IMAGE */
+    const imageStart = 118;
+    const imageEnd = 0;
+
+    const imageY = imageStart + (imageEnd - imageStart) * smooth;
+
+    revealImage.style.transform =
+      `translate3d(-50%, ${imageY}%, 0)`;
+
+    /*
+      Keep animation running only while movement is still catching up
+    */
+    if (Math.abs(targetProgress - currentProgress) > 0.001) {
+      rafId = requestAnimationFrame(animateTrustedReveal);
+    } else {
+      currentProgress = targetProgress;
+      rafId = null;
+    }
+  }
+
+  function startAnimation() {
+    if (!rafId) {
+      rafId = requestAnimationFrame(animateTrustedReveal);
+    }
+  }
+
+  window.addEventListener("scroll", startAnimation, { passive: true });
+  window.addEventListener("resize", function () {
+    currentProgress = calculateProgress();
+    startAnimation();
+  });
+
+  currentProgress = calculateProgress();
+  targetProgress = currentProgress;
+  startAnimation();
+});
