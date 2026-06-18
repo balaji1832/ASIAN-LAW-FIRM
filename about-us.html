@@ -25,18 +25,18 @@
   <body class="bg-white">
     <!-- Header Start -->
     <header class="w-full bg-white border-b border-gray-100 sticky top-0 z-50">
-      <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-16">
+      <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
         <div class="flex items-center justify-between h-[78px]">
           <!-- Logo -->
-          <a href="index.html" class="flex items-center min-w-0">
+          <a href="index.html" class="flex items-center min-w-0 shrink-0">
             <img
               src="images/logo.png"
               alt="Asian Law Firm Logo"
-              class="h-[55px] w-[55px] object-cover rounded-full shadow-md border border-[#c59a35]/30"
+              class="h-[55px] w-[55px] object-cover rounded-full shadow-md border border-[#c59a35]/30 shrink-0"
             />
 
             <div
-              class="logo-font ml-3 leading-none tracking-[-1px] text-[#082b2c] text-[23px] sm:text-[30px] md:text-[36px] lg:text-[42px] whitespace-nowrap"
+              class="logo-font ml-3 leading-none tracking-[-1px] text-[#082b2c] text-[23px] sm:text-[30px] md:text-[36px] xl:text-[42px] whitespace-nowrap"
             >
               <span class="text-[#c59a35]">A</span>sian Law Firm
             </div>
@@ -44,7 +44,7 @@
 
           <!-- Desktop Menu -->
           <nav
-            class="hidden lg:flex items-center gap-[38px] text-[#082b2c] font-semibold text-[17px] tracking-[0.2px]"
+            class="hidden xl:flex items-center gap-[34px] text-[#082b2c] font-semibold text-[17px] tracking-[0.2px]"
           >
             <a
               href="index.html"
@@ -60,7 +60,6 @@
               About Us
             </a>
 
-            <!-- Practice Areas Dropdown -->
             <div class="relative group">
               <button
                 type="button"
@@ -91,37 +90,28 @@
                   <a
                     href="property-documentation.html"
                     class="block px-5 py-4 hover:bg-[#f8f4ea] hover:text-[#c59a35] transition"
+                    >Property Documentation</a
                   >
-                    Property Documentation
-                  </a>
-
                   <a
                     href="property-civil-law.html"
                     class="block px-5 py-4 hover:bg-[#f8f4ea] hover:text-[#c59a35] transition"
+                    >Property Civil Law</a
                   >
-                    Property Civil Law
-                  </a>
-
                   <a
                     href="corporate-commercial-law.html"
                     class="block px-5 py-4 hover:bg-[#f8f4ea] hover:text-[#c59a35] transition"
+                    >Corporate and Commercial Law</a
                   >
-                    Corporate and Commercial Law
-                  </a>
-
                   <a
                     href="intellectual-property-law.html"
                     class="block px-5 py-4 hover:bg-[#f8f4ea] hover:text-[#c59a35] transition"
+                    >Intellectual Property Law</a
                   >
-                    Intellectual Property Law
-                  </a>
-
                   <a
                     href="taxation-law.html"
                     class="block px-5 py-4 hover:bg-[#f8f4ea] hover:text-[#c59a35] transition"
+                    >Taxation Law</a
                   >
-                    Taxation Law
-                  </a>
                 </div>
               </div>
             </div>
@@ -144,7 +134,7 @@
           <!-- Mobile Button -->
           <button
             id="menuBtn"
-            class="lg:hidden flex items-center justify-center w-11 h-11 rounded-xl border border-gray-200 text-[#082b2c] bg-white shadow-sm"
+            class="xl:hidden flex items-center justify-center w-11 h-11 rounded-xl border border-gray-200 text-[#082b2c] bg-white shadow-sm shrink-0"
             aria-label="Open menu"
             type="button"
           >
@@ -184,18 +174,16 @@
       <!-- Mobile Menu -->
       <div
         id="mobileMenu"
-        class="lg:hidden hidden bg-white border-t border-gray-100 shadow-xl"
+        class="xl:hidden hidden bg-white border-t border-gray-100 shadow-xl"
       >
         <nav class="px-5 sm:px-8 py-5 text-[#082b2c] font-semibold text-[16px]">
-          <a href="index.html" class="block py-3 border-b border-gray-100">
-            Home
-          </a>
+          <a href="index.html" class="block py-3 border-b border-gray-100"
+            >Home</a
+          >
+          <a href="about-us.html" class="block py-3 border-b border-gray-100"
+            >About Us</a
+          >
 
-          <a href="about-us.html" class="block py-3 border-b border-gray-100">
-            About Us
-          </a>
-
-          <!-- Mobile Practice Areas Dropdown -->
           <div class="border-b border-gray-100">
             <button
               class="mobileDropdownBtn w-full flex items-center justify-between py-3"
@@ -223,43 +211,34 @@
               <a
                 href="property-documentation.html"
                 class="block py-2 hover:text-[#c59a35]"
+                >Property Documentation</a
               >
-                Property Documentation
-              </a>
-
               <a
                 href="property-civil-law.html"
                 class="block py-2 hover:text-[#c59a35]"
+                >Property Civil Law</a
               >
-                Property Civil Law
-              </a>
-
               <a
                 href="corporate-commercial-law.html"
                 class="block py-2 hover:text-[#c59a35]"
+                >Corporate and Commercial Law</a
               >
-                Corporate and Commercial Law
-              </a>
-
               <a
                 href="intellectual-property-law.html"
                 class="block py-2 hover:text-[#c59a35]"
+                >Intellectual Property Law</a
               >
-                Intellectual Property Law
-              </a>
-
               <a
                 href="taxation-law.html"
                 class="block py-2 hover:text-[#c59a35]"
+                >Taxation Law</a
               >
-                Taxation Law
-              </a>
             </div>
           </div>
 
-          <a href="blog.html" class="block py-3 border-b border-gray-100">
-            Blog
-          </a>
+          <a href="blog.html" class="block py-3 border-b border-gray-100"
+            >Blog</a
+          >
 
           <a
             href="contact.html"
@@ -271,18 +250,357 @@
       </div>
     </header>
     <!-- Header End -->
-    <main>
-      <!-- Back To Top Button -->
-      <button
-        id="backToTopBtn"
-        class="back-to-top-btn"
-        aria-label="Back to top"
-      >
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M12 5l-7 7 1.4 1.4L11 8.8V20h2V8.8l4.6 4.6L19 12z"></path>
-        </svg>
-      </button>
+    <main class="alf-about-page">
+      <!-- SECTION 1: HERO -->
+      <section class="alf-hero-section">
+        <div class="alf-hero-overlay"></div>
+
+        <div class="alf-container alf-hero-grid">
+          <div class="alf-hero-content">
+            <div class="alf-breadcrumb fade-down">
+              <a href="index.html">Home</a>
+              <span>/</span>
+              <span>About Us</span>
+            </div>
+
+            <h1 class="letter-reveal alf-hero-title">About Asian Law Firm</h1>
+
+            <p class="fade-up alf-hero-subtitle">
+              Professional legal assistance backed by experience, integrity and
+              practical legal solutions.
+            </p>
+
+            <p class="fade-up alf-hero-text">
+              Asian Law Firm is a Chennai-based law firm providing legal and
+              professional assistance in Property Law, Corporate & Commercial
+              Law, Taxation, Documentation and allied legal matters. For more
+              than a decade, the firm has assisted individuals, businesses,
+              entrepreneurs and organisations with practical, ethical and
+              client-focused legal solutions.
+            </p>
+
+            <a href="contact.html" class="fade-up alf-primary-btn">
+              Contact Us
+              <svg viewBox="0 0 24 24">
+                <path d="M17 8l4 4-4 4M21 12H3"></path>
+              </svg>
+            </a>
+          </div>
+
+          <div class="fade-right alf-hero-image-card">
+            <img
+              src="images/about-hero.jpg"
+              alt="Professional office image Asian Law Firm"
+            />
+
+            <div class="alf-hero-note">
+              <strong>Experience. Integrity. Responsibility.</strong>
+              <span>Client-focused legal assistance in Chennai.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: WHO WE ARE -->
+      <section class="alf-section alf-who-section">
+        <div class="alf-container alf-two-grid">
+          <div class="fade-left">
+            <span class="alf-section-label">Who We Are</span>
+            <h2>WHO WE ARE</h2>
+            <p>
+              Established with a commitment to professionalism, integrity and
+              ethical practice, Asian Law Firm follows a transparent and
+              client-focused approach. Every matter is handled with due
+              diligence, confidentiality and professional responsibility while
+              delivering practical legal solutions tailored to each client's
+              requirements.
+            </p>
+          </div>
+
+          <div class="alf-highlight-grid">
+            <div class="fade-up alf-highlight-card">
+              <div class="alf-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 3l8 4v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"
+                  ></path>
+                </svg>
+              </div>
+              <h3>Professional Integrity</h3>
+              <p>Ethical handling of every client matter.</p>
+            </div>
+
+            <div class="fade-down alf-highlight-card">
+              <div class="alf-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M9 12l2 2 4-4"></path>
+                  <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"></path>
+                </svg>
+              </div>
+              <h3>Due Diligence</h3>
+              <p>Careful review, accuracy and responsibility.</p>
+            </div>
+
+            <div class="fade-right alf-highlight-card alf-wide-card">
+              <div class="alf-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M4 19h16"></path>
+                  <path d="M6 19V9l6-4 6 4v10"></path>
+                </svg>
+              </div>
+              <h3>Client-Focused Approach</h3>
+              <p>
+                Practical legal solutions tailored to each client’s
+                requirements.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: PRACTICE AREAS -->
+      <section class="alf-section alf-practice-section">
+        <div class="alf-container">
+          <div class="alf-center-heading">
+            <span class="alf-section-label fade-down">Practice Areas</span>
+            <h2 class="fade-up">PRACTICE AREAS</h2>
+          </div>
+
+          <div class="alf-practice-grid">
+            <a
+              href="property-documentation.html"
+              class="fade-up alf-practice-card"
+            >
+              <span>01</span>
+              <h3>Property Law & Documentation</h3>
+            </a>
+
+            <a
+              href="property-documentation.html"
+              class="fade-down alf-practice-card"
+            >
+              <span>02</span>
+              <h3>Sale, Purchase & Title Verification</h3>
+            </a>
+
+            <a
+              href="property-civil-law.html"
+              class="fade-left alf-practice-card"
+            >
+              <span>03</span>
+              <h3>Registration & Due Diligence</h3>
+            </a>
+
+            <a
+              href="corporate-commercial-law.html"
+              class="fade-right alf-practice-card"
+            >
+              <span>04</span>
+              <h3>Corporate & Commercial Law</h3>
+            </a>
+
+            <a
+              href="corporate-commercial-law.html"
+              class="fade-up alf-practice-card"
+            >
+              <span>05</span>
+              <h3>Company Incorporation & Compliance</h3>
+            </a>
+
+            <a href="taxation-law.html" class="fade-down alf-practice-card">
+              <span>06</span>
+              <h3>Taxation & Regulatory Matters</h3>
+            </a>
+
+            <a
+              href="corporate-commercial-law.html"
+              class="fade-left alf-practice-card"
+            >
+              <span>07</span>
+              <h3>Agreements, Contracts & Legal Opinions</h3>
+            </a>
+
+            <a href="contact.html" class="fade-right alf-practice-card">
+              <span>08</span>
+              <h3>Legal Advisory & Consultancy</h3>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: MANAGING ASSOCIATE -->
+      <section class="alf-section alf-associate-section">
+        <div class="alf-container alf-associate-grid">
+          <div class="fade-left alf-associate-image">
+            <img
+              src="images/managing-associate.jpg"
+              alt="Adv J Amirdeen Managing Associate Asian Law Firm"
+            />
+          </div>
+
+          <div class="fade-right alf-associate-content">
+            <span class="alf-section-label">Managing Associate</span>
+            <h2>Meet the Managing Associate</h2>
+
+            <p>
+              Adv. J. Amirdeen, M.B.A. (Finance), LL.B. (Hons.), is an Advocate
+              enrolled with the Bar Council of Tamil Nadu and Puducherry.
+            </p>
+
+            <p>
+              With over a decade of professional experience, he has handled
+              matters relating to property documentation, corporate compliance,
+              taxation and legal advisory services. His approach focuses on
+              professionalism, ethical practice, practical legal solutions and
+              building long-term client relationships based on trust and
+              transparency.
+            </p>
+
+            <p>
+              He leads Asian Law Firm with the support of qualified
+              professionals to ensure timely and effective legal assistance.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5: OUR TEAM -->
+      <section class="alf-section alf-team-section">
+        <div class="alf-container">
+          <div class="alf-center-heading">
+            <span class="alf-section-label fade-down">Our Professionals</span>
+            <h2 class="fade-up">OUR TEAM</h2>
+          </div>
+
+          <div class="alf-team-grid">
+            <div class="fade-up alf-team-card">
+              <div class="alf-team-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 3l7 4v5c0 5-3 8-7 9-4-1-7-4-7-9V7l7-4z"></path>
+                  <path d="M9 12l2 2 4-4"></path>
+                </svg>
+              </div>
+              <h3>Advocates & Legal Consultants</h3>
+            </div>
+
+            <div class="fade-down alf-team-card">
+              <div class="alf-team-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M4 6h16"></path>
+                  <path d="M6 6v14h12V6"></path>
+                  <path d="M9 10h6"></path>
+                  <path d="M9 14h6"></path>
+                </svg>
+              </div>
+              <h3>Chartered Accountants</h3>
+            </div>
+
+            <div class="fade-left alf-team-card">
+              <div class="alf-team-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M7 3h10l4 4v14H7V3z"></path>
+                  <path d="M17 3v5h5"></path>
+                  <path d="M10 13h7"></path>
+                  <path d="M10 17h5"></path>
+                </svg>
+              </div>
+              <h3>Company Secretaries</h3>
+            </div>
+
+            <div class="fade-right alf-team-card">
+              <div class="alf-team-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 2v20"></path>
+                  <path
+                    d="M17 5H9.5a3.5 3.5 0 0 0 0 7H14a3.5 3.5 0 0 1 0 7H6"
+                  ></path>
+                </svg>
+              </div>
+              <h3>Tax, Compliance & Documentation Professionals</h3>
+            </div>
+          </div>
+
+          <div class="alf-key-grid">
+            <p>Professional ethics</p>
+            <p>Confidentiality</p>
+            <p>Client-focused communication</p>
+            <p>Accuracy & due diligence</p>
+            <p>Efficient execution</p>
+            <p>Continuous professional development</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 6: OUR VALUES -->
+      <section class="alf-section alf-values-section">
+        <div class="alf-container">
+          <div class="alf-center-heading">
+            <span class="alf-section-label fade-down">Core Principles</span>
+            <h2 class="fade-up">OUR VALUES</h2>
+          </div>
+
+          <div class="alf-values-grid">
+            <div class="fade-up alf-value-card">Integrity</div>
+            <div class="fade-down alf-value-card">Professional Excellence</div>
+            <div class="fade-left alf-value-card">Transparency</div>
+            <div class="fade-right alf-value-card">Confidentiality</div>
+            <div class="fade-up alf-value-card">Commitment</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 7: WHY CLIENTS CHOOSE US -->
+      <section class="alf-section alf-choose-section">
+        <div class="alf-container">
+          <div class="alf-center-heading">
+            <span class="alf-section-label fade-down">Why Choose Us</span>
+            <h2 class="fade-up">WHY CLIENTS CHOOSE US</h2>
+          </div>
+
+          <div class="alf-choose-grid">
+            <div class="fade-left alf-check-card">
+              Client-focused legal assistance
+            </div>
+            <div class="fade-right alf-check-card">
+              Practical legal solutions
+            </div>
+            <div class="fade-left alf-check-card">
+              Transparent communication
+            </div>
+            <div class="fade-right alf-check-card">Ethical legal practice</div>
+            <div class="fade-left alf-check-card">
+              Confidential handling of matters
+            </div>
+            <div class="fade-right alf-check-card">
+              Experienced multidisciplinary team
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 8: DISCLAIMER -->
+      <section class="alf-disclaimer-section">
+        <div class="alf-container">
+          <div class="fade-up alf-disclaimer-card">
+            <span class="alf-section-label">Important Notice</span>
+            <h2>DISCLAIMER</h2>
+            <p>
+              As per the rules of the Bar Council of India, this website is
+              intended solely for informational purposes and should not be
+              construed as solicitation or advertisement. The information is
+              made available only to users seeking information about the firm
+              and its areas of practice.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
+    <!-- Back To Top Button -->
+    <button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 5l-7 7 1.4 1.4L11 8.8V20h2V8.8l4.6 4.6L19 12z"></path>
+      </svg>
+    </button>
 
     <!-- ASIAN LAW FIRM FOOTER -->
     <footer class="asian-footer fade-up">

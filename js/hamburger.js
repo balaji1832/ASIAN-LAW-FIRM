@@ -3,9 +3,18 @@
     const mobileMenu = document.getElementById("mobileMenu");
     const menuIcon = document.getElementById("menuIcon");
     const closeIcon = document.getElementById("closeIcon");
+    const header = document.querySelector("header");
+
+    function closeMobileMenu() {
+      if (!mobileMenu || !menuIcon || !closeIcon) return;
+      mobileMenu.classList.add("hidden");
+      menuIcon.classList.remove("hidden");
+      closeIcon.classList.add("hidden");
+    }
 
     if (menuBtn && mobileMenu && menuIcon && closeIcon) {
-      menuBtn.addEventListener("click", () => {
+      menuBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
         mobileMenu.classList.toggle("hidden");
         menuIcon.classList.toggle("hidden");
         closeIcon.classList.toggle("hidden");
@@ -13,13 +22,31 @@
     }
 
     document.querySelectorAll(".mobileDropdownBtn").forEach((button) => {
-      button.addEventListener("click", () => {
+      button.addEventListener("click", (e) => {
+        e.stopPropagation();
+
         const dropdown = button.nextElementSibling;
         const arrow = button.querySelector(".dropdownArrow");
 
         if (dropdown) dropdown.classList.toggle("hidden");
         if (arrow) arrow.classList.toggle("rotate-180");
       });
+    });
+
+    if (mobileMenu) {
+      mobileMenu.addEventListener("click", (e) => e.stopPropagation());
+    }
+
+    document.addEventListener("click", (e) => {
+      if (header && !header.contains(e.target)) {
+        closeMobileMenu();
+      }
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth >= 1280) {
+        closeMobileMenu();
+      }
     });
 
     const currentPage =
@@ -33,13 +60,20 @@
         href === `./${currentPage}` ||
         (currentPage === "index.html" && (href === "/" || href === "index.html"))
       ) {
-        link.classList.add(
-          "text-[#c59a35]",
-          "font-bold",
-          "bg-[#f8f4ea]",
-          "rounded-lg",
-          "px-2"
-        );
+        const isContactBtn = href === "contact.html";
+
+        if (isContactBtn) {
+          link.classList.remove("bg-[#082b2c]", "text-white");
+          link.classList.add("bg-[#c59a35]", "text-[#082b2c]", "font-bold");
+        } else {
+          link.classList.add(
+            "text-[#c59a35]",
+            "font-bold",
+            "bg-[#f8f4ea]",
+            "rounded-lg",
+            "px-2"
+          );
+        }
 
         const desktopDropdown = link.closest(".relative.group");
 
@@ -62,9 +96,7 @@
             mobileParentButton.classList.add("text-[#c59a35]", "font-bold");
           }
 
-          if (arrow) {
-            arrow.classList.add("rotate-180");
-          }
+          if (arrow) arrow.classList.add("rotate-180");
         }
       }
     });

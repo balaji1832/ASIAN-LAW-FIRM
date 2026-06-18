@@ -25,18 +25,18 @@
   <body class="bg-white">
     <!-- Header Start -->
     <header class="w-full bg-white border-b border-gray-100 sticky top-0 z-50">
-      <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-16">
+      <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
         <div class="flex items-center justify-between h-[78px]">
           <!-- Logo -->
-          <a href="index.html" class="flex items-center min-w-0">
+          <a href="index.html" class="flex items-center min-w-0 shrink-0">
             <img
               src="images/logo.png"
               alt="Asian Law Firm Logo"
-              class="h-[55px] w-[55px] object-cover rounded-full shadow-md border border-[#c59a35]/30"
+              class="h-[55px] w-[55px] object-cover rounded-full shadow-md border border-[#c59a35]/30 shrink-0"
             />
 
             <div
-              class="logo-font ml-3 leading-none tracking-[-1px] text-[#082b2c] text-[23px] sm:text-[30px] md:text-[36px] lg:text-[42px] whitespace-nowrap"
+              class="logo-font ml-3 leading-none tracking-[-1px] text-[#082b2c] text-[23px] sm:text-[30px] md:text-[36px] xl:text-[42px] whitespace-nowrap"
             >
               <span class="text-[#c59a35]">A</span>sian Law Firm
             </div>
@@ -44,7 +44,7 @@
 
           <!-- Desktop Menu -->
           <nav
-            class="hidden lg:flex items-center gap-[38px] text-[#082b2c] font-semibold text-[17px] tracking-[0.2px]"
+            class="hidden xl:flex items-center gap-[34px] text-[#082b2c] font-semibold text-[17px] tracking-[0.2px]"
           >
             <a
               href="index.html"
@@ -60,7 +60,6 @@
               About Us
             </a>
 
-            <!-- Practice Areas Dropdown -->
             <div class="relative group">
               <button
                 type="button"
@@ -91,37 +90,28 @@
                   <a
                     href="property-documentation.html"
                     class="block px-5 py-4 hover:bg-[#f8f4ea] hover:text-[#c59a35] transition"
+                    >Property Documentation</a
                   >
-                    Property Documentation
-                  </a>
-
                   <a
                     href="property-civil-law.html"
                     class="block px-5 py-4 hover:bg-[#f8f4ea] hover:text-[#c59a35] transition"
+                    >Property Civil Law</a
                   >
-                    Property Civil Law
-                  </a>
-
                   <a
                     href="corporate-commercial-law.html"
                     class="block px-5 py-4 hover:bg-[#f8f4ea] hover:text-[#c59a35] transition"
+                    >Corporate and Commercial Law</a
                   >
-                    Corporate and Commercial Law
-                  </a>
-
                   <a
                     href="intellectual-property-law.html"
                     class="block px-5 py-4 hover:bg-[#f8f4ea] hover:text-[#c59a35] transition"
+                    >Intellectual Property Law</a
                   >
-                    Intellectual Property Law
-                  </a>
-
                   <a
                     href="taxation-law.html"
                     class="block px-5 py-4 hover:bg-[#f8f4ea] hover:text-[#c59a35] transition"
+                    >Taxation Law</a
                   >
-                    Taxation Law
-                  </a>
                 </div>
               </div>
             </div>
@@ -144,7 +134,7 @@
           <!-- Mobile Button -->
           <button
             id="menuBtn"
-            class="lg:hidden flex items-center justify-center w-11 h-11 rounded-xl border border-gray-200 text-[#082b2c] bg-white shadow-sm"
+            class="xl:hidden flex items-center justify-center w-11 h-11 rounded-xl border border-gray-200 text-[#082b2c] bg-white shadow-sm shrink-0"
             aria-label="Open menu"
             type="button"
           >
@@ -184,18 +174,16 @@
       <!-- Mobile Menu -->
       <div
         id="mobileMenu"
-        class="lg:hidden hidden bg-white border-t border-gray-100 shadow-xl"
+        class="xl:hidden hidden bg-white border-t border-gray-100 shadow-xl"
       >
         <nav class="px-5 sm:px-8 py-5 text-[#082b2c] font-semibold text-[16px]">
-          <a href="index.html" class="block py-3 border-b border-gray-100">
-            Home
-          </a>
+          <a href="index.html" class="block py-3 border-b border-gray-100"
+            >Home</a
+          >
+          <a href="about-us.html" class="block py-3 border-b border-gray-100"
+            >About Us</a
+          >
 
-          <a href="about-us.html" class="block py-3 border-b border-gray-100">
-            About Us
-          </a>
-
-          <!-- Mobile Practice Areas Dropdown -->
           <div class="border-b border-gray-100">
             <button
               class="mobileDropdownBtn w-full flex items-center justify-between py-3"
@@ -223,43 +211,34 @@
               <a
                 href="property-documentation.html"
                 class="block py-2 hover:text-[#c59a35]"
+                >Property Documentation</a
               >
-                Property Documentation
-              </a>
-
               <a
                 href="property-civil-law.html"
                 class="block py-2 hover:text-[#c59a35]"
+                >Property Civil Law</a
               >
-                Property Civil Law
-              </a>
-
               <a
                 href="corporate-commercial-law.html"
                 class="block py-2 hover:text-[#c59a35]"
+                >Corporate and Commercial Law</a
               >
-                Corporate and Commercial Law
-              </a>
-
               <a
                 href="intellectual-property-law.html"
                 class="block py-2 hover:text-[#c59a35]"
+                >Intellectual Property Law</a
               >
-                Intellectual Property Law
-              </a>
-
               <a
                 href="taxation-law.html"
                 class="block py-2 hover:text-[#c59a35]"
+                >Taxation Law</a
               >
-                Taxation Law
-              </a>
             </div>
           </div>
 
-          <a href="blog.html" class="block py-3 border-b border-gray-100">
-            Blog
-          </a>
+          <a href="blog.html" class="block py-3 border-b border-gray-100"
+            >Blog</a
+          >
 
           <a
             href="contact.html"

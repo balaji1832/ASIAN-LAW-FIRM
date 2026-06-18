@@ -25,18 +25,18 @@
   <body class="bg-white">
     <!-- Header Start -->
     <header class="w-full bg-white border-b border-gray-100 sticky top-0 z-50">
-      <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-16">
+      <div class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-10 xl:px-16">
         <div class="flex items-center justify-between h-[78px]">
           <!-- Logo -->
-          <a href="index.html" class="flex items-center min-w-0">
+          <a href="index.html" class="flex items-center min-w-0 shrink-0">
             <img
               src="images/logo.png"
               alt="Asian Law Firm Logo"
-              class="h-[55px] w-[55px] object-cover rounded-full shadow-md border border-[#c59a35]/30"
+              class="h-[55px] w-[55px] object-cover rounded-full shadow-md border border-[#c59a35]/30 shrink-0"
             />
 
             <div
-              class="logo-font ml-3 leading-none tracking-[-1px] text-[#082b2c] text-[23px] sm:text-[30px] md:text-[36px] lg:text-[42px] whitespace-nowrap"
+              class="logo-font ml-3 leading-none tracking-[-1px] text-[#082b2c] text-[23px] sm:text-[30px] md:text-[36px] xl:text-[42px] whitespace-nowrap"
             >
               <span class="text-[#c59a35]">A</span>sian Law Firm
             </div>
@@ -44,7 +44,7 @@
 
           <!-- Desktop Menu -->
           <nav
-            class="hidden lg:flex items-center gap-[38px] text-[#082b2c] font-semibold text-[17px] tracking-[0.2px]"
+            class="hidden xl:flex items-center gap-[34px] text-[#082b2c] font-semibold text-[17px] tracking-[0.2px]"
           >
             <a
               href="index.html"
@@ -60,7 +60,6 @@
               About Us
             </a>
 
-            <!-- Practice Areas Dropdown -->
             <div class="relative group">
               <button
                 type="button"
@@ -91,37 +90,28 @@
                   <a
                     href="property-documentation.html"
                     class="block px-5 py-4 hover:bg-[#f8f4ea] hover:text-[#c59a35] transition"
+                    >Property Documentation</a
                   >
-                    Property Documentation
-                  </a>
-
                   <a
                     href="property-civil-law.html"
                     class="block px-5 py-4 hover:bg-[#f8f4ea] hover:text-[#c59a35] transition"
+                    >Property Civil Law</a
                   >
-                    Property Civil Law
-                  </a>
-
                   <a
                     href="corporate-commercial-law.html"
                     class="block px-5 py-4 hover:bg-[#f8f4ea] hover:text-[#c59a35] transition"
+                    >Corporate and Commercial Law</a
                   >
-                    Corporate and Commercial Law
-                  </a>
-
                   <a
                     href="intellectual-property-law.html"
                     class="block px-5 py-4 hover:bg-[#f8f4ea] hover:text-[#c59a35] transition"
+                    >Intellectual Property Law</a
                   >
-                    Intellectual Property Law
-                  </a>
-
                   <a
                     href="taxation-law.html"
                     class="block px-5 py-4 hover:bg-[#f8f4ea] hover:text-[#c59a35] transition"
+                    >Taxation Law</a
                   >
-                    Taxation Law
-                  </a>
                 </div>
               </div>
             </div>
@@ -144,7 +134,7 @@
           <!-- Mobile Button -->
           <button
             id="menuBtn"
-            class="lg:hidden flex items-center justify-center w-11 h-11 rounded-xl border border-gray-200 text-[#082b2c] bg-white shadow-sm"
+            class="xl:hidden flex items-center justify-center w-11 h-11 rounded-xl border border-gray-200 text-[#082b2c] bg-white shadow-sm shrink-0"
             aria-label="Open menu"
             type="button"
           >
@@ -184,18 +174,16 @@
       <!-- Mobile Menu -->
       <div
         id="mobileMenu"
-        class="lg:hidden hidden bg-white border-t border-gray-100 shadow-xl"
+        class="xl:hidden hidden bg-white border-t border-gray-100 shadow-xl"
       >
         <nav class="px-5 sm:px-8 py-5 text-[#082b2c] font-semibold text-[16px]">
-          <a href="index.html" class="block py-3 border-b border-gray-100">
-            Home
-          </a>
+          <a href="index.html" class="block py-3 border-b border-gray-100"
+            >Home</a
+          >
+          <a href="about-us.html" class="block py-3 border-b border-gray-100"
+            >About Us</a
+          >
 
-          <a href="about-us.html" class="block py-3 border-b border-gray-100">
-            About Us
-          </a>
-
-          <!-- Mobile Practice Areas Dropdown -->
           <div class="border-b border-gray-100">
             <button
               class="mobileDropdownBtn w-full flex items-center justify-between py-3"
@@ -223,43 +211,34 @@
               <a
                 href="property-documentation.html"
                 class="block py-2 hover:text-[#c59a35]"
+                >Property Documentation</a
               >
-                Property Documentation
-              </a>
-
               <a
                 href="property-civil-law.html"
                 class="block py-2 hover:text-[#c59a35]"
+                >Property Civil Law</a
               >
-                Property Civil Law
-              </a>
-
               <a
                 href="corporate-commercial-law.html"
                 class="block py-2 hover:text-[#c59a35]"
+                >Corporate and Commercial Law</a
               >
-                Corporate and Commercial Law
-              </a>
-
               <a
                 href="intellectual-property-law.html"
                 class="block py-2 hover:text-[#c59a35]"
+                >Intellectual Property Law</a
               >
-                Intellectual Property Law
-              </a>
-
               <a
                 href="taxation-law.html"
                 class="block py-2 hover:text-[#c59a35]"
+                >Taxation Law</a
               >
-                Taxation Law
-              </a>
             </div>
           </div>
 
-          <a href="blog.html" class="block py-3 border-b border-gray-100">
-            Blog
-          </a>
+          <a href="blog.html" class="block py-3 border-b border-gray-100"
+            >Blog</a
+          >
 
           <a
             href="contact.html"
@@ -273,846 +252,852 @@
     <!-- Header End -->
     <main>
       <section class="property-services-section bg-[#063536]">
-  <div class="property-services-container">
-    <!-- Heading -->
-    <div class="property-services-header">
-      <span class="letter-reveal">Expertise in legal practice areas</span>
+        <div class="property-services-container">
+          <!-- Heading -->
+          <div class="property-services-header">
+            <span class="letter-reveal">Expertise in legal practice areas</span>
 
-      <h2 class="fade-left">Corporate & Commercial Law</h2>
+            <h2 class="fade-left">Corporate & Commercial Law</h2>
 
-      <p class="fade-right">
-        Legal assistance for business formation, corporate compliance,
-        commercial agreements, business documentation, dispute resolution, and
-        corporate legal consultation.
-      </p>
-    </div>
-
-    <!-- Cards -->
-    <div class="property-services-grid">
-      <!-- 01 -->
-      <article class="property-service-card fade-up">
-        <div class="card-top">
-          <div class="icon-wrap">
-            <svg viewBox="0 0 64 64" fill="none">
-              <path d="M14 52H50" />
-              <path d="M18 52V24H46V52" />
-              <path d="M24 52V14H40V52" />
-              <path d="M28 20H36" />
-              <path d="M28 28H36" />
-              <path d="M28 36H36" />
-              <path d="M22 30H18" />
-              <path d="M46 30H42" />
-              <path d="M22 38H18" />
-              <path d="M46 38H42" />
-            </svg>
+            <p class="fade-right">
+              Legal assistance for business formation, corporate compliance,
+              commercial agreements, business documentation, dispute resolution,
+              and corporate legal consultation.
+            </p>
           </div>
 
-          <span class="service-number">01</span>
-        </div>
+          <!-- Cards -->
+          <div class="property-services-grid">
+            <!-- 01 -->
+            <article class="property-service-card fade-up">
+              <div class="card-top">
+                <div class="icon-wrap">
+                  <svg viewBox="0 0 64 64" fill="none">
+                    <path d="M14 52H50" />
+                    <path d="M18 52V24H46V52" />
+                    <path d="M24 52V14H40V52" />
+                    <path d="M28 20H36" />
+                    <path d="M28 28H36" />
+                    <path d="M28 36H36" />
+                    <path d="M22 30H18" />
+                    <path d="M46 30H42" />
+                    <path d="M22 38H18" />
+                    <path d="M46 38H42" />
+                  </svg>
+                </div>
 
-        <h3>Business Formation & Company Registration</h3>
+                <span class="service-number">01</span>
+              </div>
 
-        <p>
-          Legal assistance for company, LLP, partnership, and startup business
-          registration.
-        </p>
+              <h3>Business Formation & Company Registration</h3>
 
-        <div class="card-footer">
-          <span>Business Setup</span>
-        </div>
-      </article>
+              <p>
+                Legal assistance for company, LLP, partnership, and startup
+                business registration.
+              </p>
 
-      <!-- 02 -->
-      <article class="property-service-card fade-down">
-        <div class="card-top">
-          <div class="icon-wrap">
-            <svg viewBox="0 0 64 64" fill="none">
-              <path d="M18 10H42L50 18V54H18V10Z" />
-              <path d="M42 10V19H50" />
-              <path d="M25 27H39" />
-              <path d="M25 35H39" />
-              <path d="M25 43H34" />
-              <path d="M39 45L44 50L54 38" />
-            </svg>
+              <div class="card-footer">
+                <span>Business Setup</span>
+              </div>
+            </article>
+
+            <!-- 02 -->
+            <article class="property-service-card fade-down">
+              <div class="card-top">
+                <div class="icon-wrap">
+                  <svg viewBox="0 0 64 64" fill="none">
+                    <path d="M18 10H42L50 18V54H18V10Z" />
+                    <path d="M42 10V19H50" />
+                    <path d="M25 27H39" />
+                    <path d="M25 35H39" />
+                    <path d="M25 43H34" />
+                    <path d="M39 45L44 50L54 38" />
+                  </svg>
+                </div>
+
+                <span class="service-number">02</span>
+              </div>
+
+              <h3>Corporate Filing & Compliance</h3>
+
+              <p>
+                Support for corporate records, ROC filings, compliance, and
+                legal documentation.
+              </p>
+
+              <div class="card-footer">
+                <span>ROC Compliance</span>
+              </div>
+            </article>
+
+            <!-- 03 -->
+            <article class="property-service-card fade-up">
+              <div class="card-top">
+                <div class="icon-wrap">
+                  <svg viewBox="0 0 64 64" fill="none">
+                    <path d="M18 12H46V52H18V12Z" />
+                    <path d="M25 24H39" />
+                    <path d="M25 32H39" />
+                    <path d="M25 40H34" />
+                    <path d="M16 56H48" />
+                    <path d="M41 43L50 34" />
+                    <path d="M47 34H50V37" />
+                  </svg>
+                </div>
+
+                <span class="service-number">03</span>
+              </div>
+
+              <h3>Commercial Agreements & Contracts</h3>
+
+              <p>
+                Drafting and review of business agreements, contracts, and
+                commercial documents.
+              </p>
+
+              <div class="card-footer">
+                <span>Contract Review</span>
+              </div>
+            </article>
+
+            <!-- 04 -->
+            <article class="property-service-card fade-down">
+              <div class="card-top">
+                <div class="icon-wrap">
+                  <svg viewBox="0 0 64 64" fill="none">
+                    <path d="M18 12H42L50 20V52H18V12Z" />
+                    <path d="M42 12V21H50" />
+                    <path d="M25 29H41" />
+                    <path d="M25 36H38" />
+                    <path d="M25 43H34" />
+                    <path d="M18 52L25 45L32 52" />
+                    <circle cx="25" cy="45" r="3" />
+                  </svg>
+                </div>
+
+                <span class="service-number">04</span>
+              </div>
+
+              <h3>Business Legal Documentation Services</h3>
+
+              <p>
+                Preparation of MOUs, NDAs, joint venture, and commercial legal
+                documents.
+              </p>
+
+              <div class="card-footer">
+                <span>Legal Documents</span>
+              </div>
+            </article>
+
+            <!-- 05 -->
+            <article class="property-service-card fade-up">
+              <div class="card-top">
+                <div class="icon-wrap">
+                  <svg viewBox="0 0 64 64" fill="none">
+                    <path d="M16 44L28 32L36 40L50 24" />
+                    <path d="M44 24H50V30" />
+                    <path d="M12 54H52" />
+                    <path d="M20 18H44" />
+                    <path d="M24 14H40" />
+                    <path d="M28 18V30" />
+                    <path d="M36 18V38" />
+                    <path d="M21 30H29" />
+                    <path d="M35 38H43" />
+                  </svg>
+                </div>
+
+                <span class="service-number">05</span>
+              </div>
+
+              <h3>Commercial Dispute Resolution</h3>
+
+              <p>
+                Legal support for contract disputes, recovery matters, and
+                business settlements.
+              </p>
+
+              <div class="card-footer">
+                <span>Dispute Support</span>
+              </div>
+            </article>
+
+            <!-- 06 -->
+            <article class="property-service-card fade-down">
+              <div class="card-top">
+                <div class="icon-wrap">
+                  <svg viewBox="0 0 64 64" fill="none">
+                    <circle cx="30" cy="28" r="14" />
+                    <path d="M30 20V29L37 34" />
+                    <path d="M17 50C21 43 39 43 43 50" />
+                    <path d="M44 18L49 13L54 18" />
+                    <path d="M49 13V31" />
+                    <path d="M43 31H55" />
+                  </svg>
+                </div>
+
+                <span class="service-number">06</span>
+              </div>
+
+              <h3>Corporate Legal Consultation & Support</h3>
+
+              <p>
+                Professional legal consultation for business, corporate, and
+                commercial matters.
+              </p>
+
+              <div class="card-footer">
+                <span>Corporate Support</span>
+              </div>
+            </article>
           </div>
-
-          <span class="service-number">02</span>
         </div>
-
-        <h3>Corporate Filing & Compliance</h3>
-
-        <p>
-          Support for corporate records, ROC filings, compliance, and legal
-          documentation.
-        </p>
-
-        <div class="card-footer">
-          <span>ROC Compliance</span>
-        </div>
-      </article>
-
-      <!-- 03 -->
-      <article class="property-service-card fade-up">
-        <div class="card-top">
-          <div class="icon-wrap">
-            <svg viewBox="0 0 64 64" fill="none">
-              <path d="M18 12H46V52H18V12Z" />
-              <path d="M25 24H39" />
-              <path d="M25 32H39" />
-              <path d="M25 40H34" />
-              <path d="M16 56H48" />
-              <path d="M41 43L50 34" />
-              <path d="M47 34H50V37" />
-            </svg>
-          </div>
-
-          <span class="service-number">03</span>
-        </div>
-
-        <h3>Commercial Agreements & Contracts</h3>
-
-        <p>
-          Drafting and review of business agreements, contracts, and commercial
-          documents.
-        </p>
-
-        <div class="card-footer">
-          <span>Contract Review</span>
-        </div>
-      </article>
-
-      <!-- 04 -->
-      <article class="property-service-card fade-down">
-        <div class="card-top">
-          <div class="icon-wrap">
-            <svg viewBox="0 0 64 64" fill="none">
-              <path d="M18 12H42L50 20V52H18V12Z" />
-              <path d="M42 12V21H50" />
-              <path d="M25 29H41" />
-              <path d="M25 36H38" />
-              <path d="M25 43H34" />
-              <path d="M18 52L25 45L32 52" />
-              <circle cx="25" cy="45" r="3" />
-            </svg>
-          </div>
-
-          <span class="service-number">04</span>
-        </div>
-
-        <h3>Business Legal Documentation Services</h3>
-
-        <p>
-          Preparation of MOUs, NDAs, joint venture, and commercial legal
-          documents.
-        </p>
-
-        <div class="card-footer">
-          <span>Legal Documents</span>
-        </div>
-      </article>
-
-      <!-- 05 -->
-      <article class="property-service-card fade-up">
-        <div class="card-top">
-          <div class="icon-wrap">
-            <svg viewBox="0 0 64 64" fill="none">
-              <path d="M16 44L28 32L36 40L50 24" />
-              <path d="M44 24H50V30" />
-              <path d="M12 54H52" />
-              <path d="M20 18H44" />
-              <path d="M24 14H40" />
-              <path d="M28 18V30" />
-              <path d="M36 18V38" />
-              <path d="M21 30H29" />
-              <path d="M35 38H43" />
-            </svg>
-          </div>
-
-          <span class="service-number">05</span>
-        </div>
-
-        <h3>Commercial Dispute Resolution</h3>
-
-        <p>
-          Legal support for contract disputes, recovery matters, and business
-          settlements.
-        </p>
-
-        <div class="card-footer">
-          <span>Dispute Support</span>
-        </div>
-      </article>
-
-      <!-- 06 -->
-      <article class="property-service-card fade-down">
-        <div class="card-top">
-          <div class="icon-wrap">
-            <svg viewBox="0 0 64 64" fill="none">
-              <circle cx="30" cy="28" r="14" />
-              <path d="M30 20V29L37 34" />
-              <path d="M17 50C21 43 39 43 43 50" />
-              <path d="M44 18L49 13L54 18" />
-              <path d="M49 13V31" />
-              <path d="M43 31H55" />
-            </svg>
-          </div>
-
-          <span class="service-number">06</span>
-        </div>
-
-        <h3>Corporate Legal Consultation & Support</h3>
-
-        <p>
-          Professional legal consultation for business, corporate, and
-          commercial matters.
-        </p>
-
-        <div class="card-footer">
-          <span>Corporate Support</span>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
+      </section>
 
       <!-- Section 2 -->
       <!-- CORPORATE & COMMERCIAL LAW MODERN ONE CARD CAROUSEL -->
-<section class="property-carousel-section">
-  <div class="property-carousel-container">
-    <!-- LEFT CONTENT -->
-    <div class="property-carousel-intro">
-      <span class="property-kicker fade-left">
-        Expertise in Legal Practice Areas
-      </span>
+      <section class="property-carousel-section">
+        <div class="property-carousel-container">
+          <!-- LEFT CONTENT -->
+          <div class="property-carousel-intro">
+            <span class="property-kicker fade-left">
+              Expertise in Legal Practice Areas
+            </span>
 
-      <h2 class="fade-right">Corporate & Commercial Law Services in Chennai</h2>
+            <h2 class="fade-right">
+              Corporate & Commercial Law Services in Chennai
+            </h2>
 
-      <h3 class="fade-down">
-        Professional Legal Assistance for Businesses & Commercial Matters
-      </h3>
+            <h3 class="fade-down">
+              Professional Legal Assistance for Businesses & Commercial Matters
+            </h3>
 
-      <p class="fade-down">
-        At Asian Law Firm, we provide professional legal assistance relating to
-        Corporate & Commercial Law matters in Chennai. We assist startups,
-        entrepreneurs, companies, business owners, firms, and commercial
-        establishments in handling various business legal requirements with
-        proper legal guidance, documentation support, and compliance assistance.
-      </p>
+            <p class="fade-down">
+              At Asian Law Firm, we provide professional legal assistance
+              relating to Corporate & Commercial Law matters in Chennai. We
+              assist startups, entrepreneurs, companies, business owners, firms,
+              and commercial establishments in handling various business legal
+              requirements with proper legal guidance, documentation support,
+              and compliance assistance.
+            </p>
 
-      <p class="fade-down">
-        Our office provides legal assistance relating to business formation,
-        company registration, commercial agreements, corporate documentation,
-        compliance matters, and commercial dispute resolution in accordance with
-        applicable laws and professional standards.
-      </p>
-    </div>
-
-    <!-- RIGHT CAROUSEL -->
-    <div class="property-carousel-wrap fade-left">
-      <!-- TOP BAR -->
-      <div class="carousel-topbar">
-        <div class="carousel-count">
-          <span id="propertyCurrent">01</span>
-          <small>/ 06</small>
-        </div>
-
-        <div class="carousel-controls">
-          <button
-            class="carousel-btn"
-            id="propertyPrev"
-            type="button"
-            aria-label="Previous service"
-          >
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M19 12H5"></path>
-              <path d="M12 19L5 12L12 5"></path>
-            </svg>
-          </button>
-
-          <button
-            class="carousel-btn"
-            id="propertyNext"
-            type="button"
-            aria-label="Next service"
-          >
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M5 12H19"></path>
-              <path d="M12 5L19 12L12 19"></path>
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      <!-- CARD -->
-      <div class="property-card-shell">
-        <div class="property-progress">
-          <span id="propertyProgress"></span>
-        </div>
-
-        <!-- 01 -->
-        <div class="property-slide active">
-          <div class="property-card">
-            <div class="property-card-top">
-              <div class="property-icon">
-                <!-- Business Formation Icon -->
-                <svg viewBox="0 0 64 64" fill="none">
-                  <path d="M14 52H50"></path>
-                  <path d="M18 52V24H46V52"></path>
-                  <path d="M24 52V14H40V52"></path>
-                  <path d="M28 22H36"></path>
-                  <path d="M28 30H36"></path>
-                  <path d="M28 38H36"></path>
-                  <path d="M18 30H24"></path>
-                  <path d="M40 30H46"></path>
-                  <path d="M18 38H24"></path>
-                  <path d="M40 38H46"></path>
-                </svg>
-              </div>
-
-              <span>01</span>
-            </div>
-
-            <h4>Business Formation & Company Registration</h4>
-            <p>
-              We provide legal assistance relating to Private Limited Company
-              Registration, LLP Registration, Partnership Firm Formation,
-              Proprietorship Business Setup, startup legal support and
-              consultation, and business structuring and registration guidance.
+            <p class="fade-down">
+              Our office provides legal assistance relating to business
+              formation, company registration, commercial agreements, corporate
+              documentation, compliance matters, and commercial dispute
+              resolution in accordance with applicable laws and professional
+              standards.
             </p>
           </div>
-        </div>
 
-        <!-- 02 -->
-        <div class="property-slide">
-          <div class="property-card">
-            <div class="property-card-top">
-              <div class="property-icon">
-                <!-- Compliance Filing Icon -->
-                <svg viewBox="0 0 64 64" fill="none">
-                  <path d="M18 10H42L50 18V54H18V10Z"></path>
-                  <path d="M42 10V19H50"></path>
-                  <path d="M25 27H39"></path>
-                  <path d="M25 35H39"></path>
-                  <path d="M25 43H34"></path>
-                  <path d="M39 45L44 50L54 38"></path>
-                  <circle cx="44" cy="44" r="11"></circle>
-                </svg>
+          <!-- RIGHT CAROUSEL -->
+          <div class="property-carousel-wrap fade-left">
+            <!-- TOP BAR -->
+            <div class="carousel-topbar">
+              <div class="carousel-count">
+                <span id="propertyCurrent">01</span>
+                <small>/ 06</small>
               </div>
 
-              <span>02</span>
+              <div class="carousel-controls">
+                <button
+                  class="carousel-btn"
+                  id="propertyPrev"
+                  type="button"
+                  aria-label="Previous service"
+                >
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M19 12H5"></path>
+                    <path d="M12 19L5 12L12 5"></path>
+                  </svg>
+                </button>
+
+                <button
+                  class="carousel-btn"
+                  id="propertyNext"
+                  type="button"
+                  aria-label="Next service"
+                >
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M5 12H19"></path>
+                    <path d="M12 5L19 12L12 19"></path>
+                  </svg>
+                </button>
+              </div>
             </div>
 
-            <h4>Corporate Filing & Compliance</h4>
-            <p>
-              Our office assists businesses in matters relating to corporate
-              legal documentation, board resolutions and company records, ROC
-              related documentation filing, corporate compliance assistance,
-              drafting legal notices and replies, and review of commercial
-              documents and records.
-            </p>
-          </div>
-        </div>
-
-        <!-- 03 -->
-        <div class="property-slide">
-          <div class="property-card">
-            <div class="property-card-top">
-              <div class="property-icon">
-                <!-- Commercial Contracts Icon -->
-                <svg viewBox="0 0 64 64" fill="none">
-                  <path d="M18 12H46V52H18V12Z"></path>
-                  <path d="M25 24H39"></path>
-                  <path d="M25 32H39"></path>
-                  <path d="M25 40H34"></path>
-                  <path d="M16 56H48"></path>
-                  <path d="M40 46L51 35"></path>
-                  <path d="M48 35H51V38"></path>
-                </svg>
+            <!-- CARD -->
+            <div class="property-card-shell">
+              <div class="property-progress">
+                <span id="propertyProgress"></span>
               </div>
 
-              <span>03</span>
-            </div>
+              <!-- 01 -->
+              <div class="property-slide active">
+                <div class="property-card">
+                  <div class="property-card-top">
+                    <div class="property-icon">
+                      <!-- Business Formation Icon -->
+                      <svg viewBox="0 0 64 64" fill="none">
+                        <path d="M14 52H50"></path>
+                        <path d="M18 52V24H46V52"></path>
+                        <path d="M24 52V14H40V52"></path>
+                        <path d="M28 22H36"></path>
+                        <path d="M28 30H36"></path>
+                        <path d="M28 38H36"></path>
+                        <path d="M18 30H24"></path>
+                        <path d="M40 30H46"></path>
+                        <path d="M18 38H24"></path>
+                        <path d="M40 38H46"></path>
+                      </svg>
+                    </div>
 
-            <h4>Commercial Agreements & Contracts</h4>
-            <p>
-              We provide legal assistance relating to drafting and review of
-              Shareholder Agreements, Partnership Agreements, Vendor & Service
-              Agreements, Employment Agreements, Franchise Agreements, and
-              business and commercial contracts.
-            </p>
-          </div>
-        </div>
+                    <span>01</span>
+                  </div>
 
-        <!-- 04 -->
-        <div class="property-slide">
-          <div class="property-card">
-            <div class="property-card-top">
-              <div class="property-icon">
-                <!-- Business Documentation Icon -->
-                <svg viewBox="0 0 64 64" fill="none">
-                  <path d="M18 12H42L50 20V52H18V12Z"></path>
-                  <path d="M42 12V21H50"></path>
-                  <path d="M25 29H41"></path>
-                  <path d="M25 36H38"></path>
-                  <path d="M25 43H34"></path>
-                  <path d="M18 52L25 45L32 52"></path>
-                  <circle cx="25" cy="45" r="3"></circle>
-                </svg>
+                  <h4>Business Formation & Company Registration</h4>
+                  <p>
+                    We provide legal assistance relating to Private Limited
+                    Company Registration, LLP Registration, Partnership Firm
+                    Formation, Proprietorship Business Setup, startup legal
+                    support and consultation, and business structuring and
+                    registration guidance.
+                  </p>
+                </div>
               </div>
 
-              <span>04</span>
-            </div>
+              <!-- 02 -->
+              <div class="property-slide">
+                <div class="property-card">
+                  <div class="property-card-top">
+                    <div class="property-icon">
+                      <!-- Compliance Filing Icon -->
+                      <svg viewBox="0 0 64 64" fill="none">
+                        <path d="M18 10H42L50 18V54H18V10Z"></path>
+                        <path d="M42 10V19H50"></path>
+                        <path d="M25 27H39"></path>
+                        <path d="M25 35H39"></path>
+                        <path d="M25 43H34"></path>
+                        <path d="M39 45L44 50L54 38"></path>
+                        <circle cx="44" cy="44" r="11"></circle>
+                      </svg>
+                    </div>
 
-            <h4>Business Legal Documentation Services</h4>
-            <p>
-              We assist clients in preparation and documentation of Memorandum
-              of Understanding (MOU), Non-Disclosure Agreements (NDA), Joint
-              Venture Agreements, commercial transaction documents, business
-              policies and legal records, and contract review and legal risk
-              assessment.
-            </p>
-          </div>
-        </div>
+                    <span>02</span>
+                  </div>
 
-        <!-- 05 -->
-        <div class="property-slide">
-          <div class="property-card">
-            <div class="property-card-top">
-              <div class="property-icon">
-                <!-- Commercial Dispute Icon -->
-                <svg viewBox="0 0 64 64" fill="none">
-                  <path d="M16 44L28 32L36 40L50 24"></path>
-                  <path d="M44 24H50V30"></path>
-                  <path d="M12 54H52"></path>
-                  <path d="M20 18H44"></path>
-                  <path d="M24 14H40"></path>
-                  <path d="M28 18V30"></path>
-                  <path d="M36 18V38"></path>
-                  <path d="M21 30H29"></path>
-                  <path d="M35 38H43"></path>
-                </svg>
+                  <h4>Corporate Filing & Compliance</h4>
+                  <p>
+                    Our office assists businesses in matters relating to
+                    corporate legal documentation, board resolutions and company
+                    records, ROC related documentation filing, corporate
+                    compliance assistance, drafting legal notices and replies,
+                    and review of commercial documents and records.
+                  </p>
+                </div>
               </div>
 
-              <span>05</span>
-            </div>
+              <!-- 03 -->
+              <div class="property-slide">
+                <div class="property-card">
+                  <div class="property-card-top">
+                    <div class="property-icon">
+                      <!-- Commercial Contracts Icon -->
+                      <svg viewBox="0 0 64 64" fill="none">
+                        <path d="M18 12H46V52H18V12Z"></path>
+                        <path d="M25 24H39"></path>
+                        <path d="M25 32H39"></path>
+                        <path d="M25 40H34"></path>
+                        <path d="M16 56H48"></path>
+                        <path d="M40 46L51 35"></path>
+                        <path d="M48 35H51V38"></path>
+                      </svg>
+                    </div>
 
-            <h4>Commercial Dispute Resolution</h4>
-            <p>
-              We assist clients in matters relating to commercial and business
-              disputes, breach of contract issues, recovery related proceedings,
-              business settlement negotiations, legal notices relating to
-              commercial matters, and arbitration and dispute resolution support.
-            </p>
-          </div>
-        </div>
+                    <span>03</span>
+                  </div>
 
-        <!-- 06 -->
-        <div class="property-slide">
-          <div class="property-card">
-            <div class="property-card-top">
-              <div class="property-icon">
-                <!-- Corporate Consultation Icon -->
-                <svg viewBox="0 0 64 64" fill="none">
-                  <circle cx="30" cy="25" r="10"></circle>
-                  <path d="M16 52C19 42 41 42 44 52"></path>
-                  <path d="M44 17L50 11L56 17"></path>
-                  <path d="M50 11V32"></path>
-                  <path d="M43 32H57"></path>
-                  <path d="M24 25H36"></path>
-                  <path d="M30 19V31"></path>
-                </svg>
+                  <h4>Commercial Agreements & Contracts</h4>
+                  <p>
+                    We provide legal assistance relating to drafting and review
+                    of Shareholder Agreements, Partnership Agreements, Vendor &
+                    Service Agreements, Employment Agreements, Franchise
+                    Agreements, and business and commercial contracts.
+                  </p>
+                </div>
               </div>
 
-              <span>06</span>
+              <!-- 04 -->
+              <div class="property-slide">
+                <div class="property-card">
+                  <div class="property-card-top">
+                    <div class="property-icon">
+                      <!-- Business Documentation Icon -->
+                      <svg viewBox="0 0 64 64" fill="none">
+                        <path d="M18 12H42L50 20V52H18V12Z"></path>
+                        <path d="M42 12V21H50"></path>
+                        <path d="M25 29H41"></path>
+                        <path d="M25 36H38"></path>
+                        <path d="M25 43H34"></path>
+                        <path d="M18 52L25 45L32 52"></path>
+                        <circle cx="25" cy="45" r="3"></circle>
+                      </svg>
+                    </div>
+
+                    <span>04</span>
+                  </div>
+
+                  <h4>Business Legal Documentation Services</h4>
+                  <p>
+                    We assist clients in preparation and documentation of
+                    Memorandum of Understanding (MOU), Non-Disclosure Agreements
+                    (NDA), Joint Venture Agreements, commercial transaction
+                    documents, business policies and legal records, and contract
+                    review and legal risk assessment.
+                  </p>
+                </div>
+              </div>
+
+              <!-- 05 -->
+              <div class="property-slide">
+                <div class="property-card">
+                  <div class="property-card-top">
+                    <div class="property-icon">
+                      <!-- Commercial Dispute Icon -->
+                      <svg viewBox="0 0 64 64" fill="none">
+                        <path d="M16 44L28 32L36 40L50 24"></path>
+                        <path d="M44 24H50V30"></path>
+                        <path d="M12 54H52"></path>
+                        <path d="M20 18H44"></path>
+                        <path d="M24 14H40"></path>
+                        <path d="M28 18V30"></path>
+                        <path d="M36 18V38"></path>
+                        <path d="M21 30H29"></path>
+                        <path d="M35 38H43"></path>
+                      </svg>
+                    </div>
+
+                    <span>05</span>
+                  </div>
+
+                  <h4>Commercial Dispute Resolution</h4>
+                  <p>
+                    We assist clients in matters relating to commercial and
+                    business disputes, breach of contract issues, recovery
+                    related proceedings, business settlement negotiations, legal
+                    notices relating to commercial matters, and arbitration and
+                    dispute resolution support.
+                  </p>
+                </div>
+              </div>
+
+              <!-- 06 -->
+              <div class="property-slide">
+                <div class="property-card">
+                  <div class="property-card-top">
+                    <div class="property-icon">
+                      <!-- Corporate Consultation Icon -->
+                      <svg viewBox="0 0 64 64" fill="none">
+                        <circle cx="30" cy="25" r="10"></circle>
+                        <path d="M16 52C19 42 41 42 44 52"></path>
+                        <path d="M44 17L50 11L56 17"></path>
+                        <path d="M50 11V32"></path>
+                        <path d="M43 32H57"></path>
+                        <path d="M24 25H36"></path>
+                        <path d="M30 19V31"></path>
+                      </svg>
+                    </div>
+
+                    <span>06</span>
+                  </div>
+
+                  <h4>Corporate Legal Consultation & Support</h4>
+                  <p>
+                    We provide professional legal consultation relating to
+                    business and commercial law matters, corporate compliance
+                    support, contract enforcement issues, documentation review
+                    and legal guidance, commercial transaction risk assessment,
+                    and business legal support for startups and companies.
+                  </p>
+                </div>
+              </div>
             </div>
 
-            <h4>Corporate Legal Consultation & Support</h4>
-            <p>
-              We provide professional legal consultation relating to business
-              and commercial law matters, corporate compliance support, contract
-              enforcement issues, documentation review and legal guidance,
-              commercial transaction risk assessment, and business legal support
-              for startups and companies.
-            </p>
+            <div class="property-dots" id="propertyDots"></div>
           </div>
         </div>
-      </div>
-
-      <div class="property-dots" id="propertyDots"></div>
-    </div>
-  </div>
-</section>
+      </section>
 
       <!-- Professional Assistance -->
       <section
-  class="relative overflow-hidden bg-[#063536] px-4 py-16 text-center sm:px-6 sm:py-20 lg:px-8 lg:py-24"
->
-  <!-- Soft background glow -->
-  <div
-    class="pointer-events-none absolute left-1/2 top-0 h-[320px] w-[320px] -translate-x-1/2 rounded-full bg-[#c59a35]/15 blur-3xl"
-  ></div>
-
-  <div class="relative z-10 mx-auto max-w-4xl">
-    <span
-      class="mb-4 fade-left inline-flex items-center justify-center gap-3 text-[10px] font-extrabold uppercase tracking-[0.24em] text-[#c59a35] sm:text-[11px]"
-    >
-      <span class="h-px w-8 bg-[#c59a35]"></span>
-      Corporate Legal Support
-      <span class="h-px w-8 bg-[#c59a35]"></span>
-    </span>
-
-    <h2
-      class="font-serif letter-reveal text-4xl font-medium leading-[1.05] tracking-[-0.04em] text-white sm:text-5xl lg:text-[64px]"
-    >
-      Professional Assistance
-    </h2>
-
-    <p
-      class="mx-auto fade-up mt-6 max-w-3xl text-[15px] leading-8 text-white/75 sm:text-base sm:leading-8 lg:text-[18px] lg:leading-[1.85]"
-    >
-      Asian Law Firm provides legal assistance relating to Corporate &
-      Commercial Law matters with focus on legal documentation, business
-      compliance support, commercial agreements, dispute resolution assistance,
-      and procedural guidance based on the facts, records, and instructions made
-      available by the client.
-    </p>
-
-    <!-- CTA Button -->
-    <div class="mt-9 flex justify-center fade-down">
-      <a
-        href="contact.html"
-        class="group inline-flex items-center justify-center gap-3 rounded-full border border-[#c59a35]/60 bg-[#c59a35] px-7 py-4 text-sm font-bold uppercase tracking-[0.16em] text-[#063536] shadow-[0_18px_45px_rgba(197,154,53,0.22)] transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:text-[#063536] hover:shadow-[0_24px_60px_rgba(255,255,255,0.16)] sm:px-8"
+        class="relative overflow-hidden bg-[#063536] px-4 py-16 text-center sm:px-6 sm:py-20 lg:px-8 lg:py-24"
       >
-        Get Legal Guidance
+        <!-- Soft background glow -->
+        <div
+          class="pointer-events-none absolute left-1/2 top-0 h-[320px] w-[320px] -translate-x-1/2 rounded-full bg-[#c59a35]/15 blur-3xl"
+        ></div>
 
-        <span
-          class="grid h-8 w-8 place-items-center rounded-full bg-[#063536] text-white transition-all duration-300 group-hover:bg-[#c59a35] group-hover:text-[#063536]"
-        >
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            class="h-4 w-4 stroke-current"
-            stroke-width="2.3"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+        <div class="relative z-10 mx-auto max-w-4xl">
+          <span
+            class="mb-4 fade-left inline-flex items-center justify-center gap-3 text-[10px] font-extrabold uppercase tracking-[0.24em] text-[#c59a35] sm:text-[11px]"
           >
-            <path d="M5 12H19"></path>
-            <path d="M12 5L19 12L12 19"></path>
-          </svg>
-        </span>
-      </a>
-    </div>
-  </div>
-</section>
+            <span class="h-px w-8 bg-[#c59a35]"></span>
+            Corporate Legal Support
+            <span class="h-px w-8 bg-[#c59a35]"></span>
+          </span>
+
+          <h2
+            class="font-serif letter-reveal text-4xl font-medium leading-[1.05] tracking-[-0.04em] text-white sm:text-5xl lg:text-[64px]"
+          >
+            Professional Assistance
+          </h2>
+
+          <p
+            class="mx-auto fade-up mt-6 max-w-3xl text-[15px] leading-8 text-white/75 sm:text-base sm:leading-8 lg:text-[18px] lg:leading-[1.85]"
+          >
+            Asian Law Firm provides legal assistance relating to Corporate &
+            Commercial Law matters with focus on legal documentation, business
+            compliance support, commercial agreements, dispute resolution
+            assistance, and procedural guidance based on the facts, records, and
+            instructions made available by the client.
+          </p>
+
+          <!-- CTA Button -->
+          <div class="mt-9 flex justify-center fade-down">
+            <a
+              href="contact.html"
+              class="group inline-flex items-center justify-center gap-3 rounded-full border border-[#c59a35]/60 bg-[#c59a35] px-7 py-4 text-sm font-bold uppercase tracking-[0.16em] text-[#063536] shadow-[0_18px_45px_rgba(197,154,53,0.22)] transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:text-[#063536] hover:shadow-[0_24px_60px_rgba(255,255,255,0.16)] sm:px-8"
+            >
+              Get Legal Guidance
+
+              <span
+                class="grid h-8 w-8 place-items-center rounded-full bg-[#063536] text-white transition-all duration-300 group-hover:bg-[#c59a35] group-hover:text-[#063536]"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  class="h-4 w-4 stroke-current"
+                  stroke-width="2.3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12H19"></path>
+                  <path d="M12 5L19 12L12 19"></path>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
 
       <!-- FAQ SECTION -->
       <section
-  class="relative overflow-hidden bg-[#f6f2e9] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24"
->
-  <!-- Soft Glow -->
-  <div
-    class="pointer-events-none absolute -right-32 -top-32 h-[360px] w-[360px] rounded-full bg-[#c59a35]/20 blur-3xl"
-  ></div>
-
-  <div class="relative z-10 mx-auto max-w-5xl">
-    <!-- Heading -->
-    <div class="mx-auto mb-10 max-w-3xl text-center sm:mb-12">
-      <span
-        class="mb-4 fade-up inline-flex items-center justify-center gap-3 text-[10px] font-extrabold uppercase tracking-[0.24em] text-[#c59a35] sm:text-[11px]"
+        class="relative overflow-hidden bg-[#f6f2e9] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24"
       >
-        <span class="h-px w-8 bg-[#c59a35]"></span>
-        Legal Clarity
-        <span class="h-px w-8 bg-[#c59a35]"></span>
-      </span>
+        <!-- Soft Glow -->
+        <div
+          class="pointer-events-none absolute -right-32 -top-32 h-[360px] w-[360px] rounded-full bg-[#c59a35]/20 blur-3xl"
+        ></div>
 
-      <h2
-        class="font-serif fade-right text-4xl font-medium leading-[1.05] tracking-[-0.04em] text-[#063536] sm:text-5xl lg:text-[64px]"
-      >
-        Frequently Asked Questions (FAQs)
-      </h2>
-    </div>
-
-    <!-- FAQ LIST -->
-    <div class="space-y-4 fade-up">
-
-      <!-- FAQ 01 -->
-      <div
-        class="faq-item overflow-hidden rounded-3xl border border-[#063536]/10 bg-white/80 shadow-[0_18px_50px_rgba(6,53,54,0.08)] backdrop-blur-sm"
-      >
-        <button
-          type="button"
-          class="faq-btn flex w-full items-start justify-between gap-5 px-5 py-5 text-left sm:px-7 sm:py-6"
-        >
-          <div class="flex gap-4">
+        <div class="relative z-10 mx-auto max-w-5xl">
+          <!-- Heading -->
+          <div class="mx-auto mb-10 max-w-3xl text-center sm:mb-12">
             <span
-              class="mt-1 shrink-0 font-serif text-2xl text-[#c59a35] sm:text-3xl"
+              class="mb-4 fade-up inline-flex items-center justify-center gap-3 text-[10px] font-extrabold uppercase tracking-[0.24em] text-[#c59a35] sm:text-[11px]"
             >
-              01
+              <span class="h-px w-8 bg-[#c59a35]"></span>
+              Legal Clarity
+              <span class="h-px w-8 bg-[#c59a35]"></span>
             </span>
 
-            <h3
-              class="font-serif text-xl font-medium leading-snug tracking-[-0.02em] text-[#063536] sm:text-2xl"
+            <h2
+              class="font-serif fade-right text-4xl font-medium leading-[1.05] tracking-[-0.04em] text-[#063536] sm:text-5xl lg:text-[64px]"
             >
-              What types of business entities can be registered?
-            </h3>
+              Frequently Asked Questions (FAQs)
+            </h2>
           </div>
 
-          <span
-            class="faq-icon mt-1 grid h-9 w-9 shrink-0 place-items-center rounded-full bg-[#063536] text-white transition-all duration-300"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              class="h-5 w-5 stroke-current"
-              stroke-width="2.3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+          <!-- FAQ LIST -->
+          <div class="space-y-4 fade-up">
+            <!-- FAQ 01 -->
+            <div
+              class="faq-item overflow-hidden rounded-3xl border border-[#063536]/10 bg-white/80 shadow-[0_18px_50px_rgba(6,53,54,0.08)] backdrop-blur-sm"
             >
-              <path d="M12 5V19"></path>
-              <path d="M5 12H19"></path>
-            </svg>
-          </span>
-        </button>
+              <button
+                type="button"
+                class="faq-btn flex w-full items-start justify-between gap-5 px-5 py-5 text-left sm:px-7 sm:py-6"
+              >
+                <div class="flex gap-4">
+                  <span
+                    class="mt-1 shrink-0 font-serif text-2xl text-[#c59a35] sm:text-3xl"
+                  >
+                    01
+                  </span>
 
-        <div
-          class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
-        >
-          <p
-            class="px-5 pb-6 pl-[76px] text-[15px] leading-8 text-[#063536]/70 sm:px-7 sm:pb-7 sm:pl-[92px] sm:text-base"
-          >
-            Business entities may include Private Limited Companies, LLPs,
-            Partnership Firms, and Proprietorship concerns. The selection of
-            business structure generally depends on the nature, size, and
-            objectives of the business. Proper legal guidance may help
-            businesses understand registration and compliance requirements.
-          </p>
-        </div>
-      </div>
+                  <h3
+                    class="font-serif text-xl font-medium leading-snug tracking-[-0.02em] text-[#063536] sm:text-2xl"
+                  >
+                    What types of business entities can be registered?
+                  </h3>
+                </div>
 
-      <!-- FAQ 02 -->
-      <div
-        class="faq-item overflow-hidden rounded-3xl border border-[#063536]/10 bg-white/80 shadow-[0_18px_50px_rgba(6,53,54,0.08)] backdrop-blur-sm"
-      >
-        <button
-          type="button"
-          class="faq-btn flex w-full items-start justify-between gap-5 px-5 py-5 text-left sm:px-7 sm:py-6"
-        >
-          <div class="flex gap-4">
-            <span
-              class="mt-1 shrink-0 font-serif text-2xl text-[#c59a35] sm:text-3xl"
+                <span
+                  class="faq-icon mt-1 grid h-9 w-9 shrink-0 place-items-center rounded-full bg-[#063536] text-white transition-all duration-300"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    class="h-5 w-5 stroke-current"
+                    stroke-width="2.3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M12 5V19"></path>
+                    <path d="M5 12H19"></path>
+                  </svg>
+                </span>
+              </button>
+
+              <div
+                class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
+              >
+                <p
+                  class="px-5 pb-6 pl-[76px] text-[15px] leading-8 text-[#063536]/70 sm:px-7 sm:pb-7 sm:pl-[92px] sm:text-base"
+                >
+                  Business entities may include Private Limited Companies, LLPs,
+                  Partnership Firms, and Proprietorship concerns. The selection
+                  of business structure generally depends on the nature, size,
+                  and objectives of the business. Proper legal guidance may help
+                  businesses understand registration and compliance
+                  requirements.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 02 -->
+            <div
+              class="faq-item overflow-hidden rounded-3xl border border-[#063536]/10 bg-white/80 shadow-[0_18px_50px_rgba(6,53,54,0.08)] backdrop-blur-sm"
             >
-              02
-            </span>
+              <button
+                type="button"
+                class="faq-btn flex w-full items-start justify-between gap-5 px-5 py-5 text-left sm:px-7 sm:py-6"
+              >
+                <div class="flex gap-4">
+                  <span
+                    class="mt-1 shrink-0 font-serif text-2xl text-[#c59a35] sm:text-3xl"
+                  >
+                    02
+                  </span>
 
-            <h3
-              class="font-serif text-xl font-medium leading-snug tracking-[-0.02em] text-[#063536] sm:text-2xl"
+                  <h3
+                    class="font-serif text-xl font-medium leading-snug tracking-[-0.02em] text-[#063536] sm:text-2xl"
+                  >
+                    Why are commercial agreements important for businesses?
+                  </h3>
+                </div>
+
+                <span
+                  class="faq-icon mt-1 grid h-9 w-9 shrink-0 place-items-center rounded-full bg-[#063536] text-white transition-all duration-300"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    class="h-5 w-5 stroke-current"
+                    stroke-width="2.3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M12 5V19"></path>
+                    <path d="M5 12H19"></path>
+                  </svg>
+                </span>
+              </button>
+
+              <div
+                class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
+              >
+                <p
+                  class="px-5 pb-6 pl-[76px] text-[15px] leading-8 text-[#063536]/70 sm:px-7 sm:pb-7 sm:pl-[92px] sm:text-base"
+                >
+                  Commercial agreements help define the rights, obligations,
+                  payment terms, responsibilities, and business relationships
+                  between parties. Properly drafted agreements may help reduce
+                  misunderstandings and future disputes. Legal review also helps
+                  businesses understand potential legal and commercial risks.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 03 -->
+            <div
+              class="faq-item overflow-hidden rounded-3xl border border-[#063536]/10 bg-white/80 shadow-[0_18px_50px_rgba(6,53,54,0.08)] backdrop-blur-sm"
             >
-              Why are commercial agreements important for businesses?
-            </h3>
+              <button
+                type="button"
+                class="faq-btn flex w-full items-start justify-between gap-5 px-5 py-5 text-left sm:px-7 sm:py-6"
+              >
+                <div class="flex gap-4">
+                  <span
+                    class="mt-1 shrink-0 font-serif text-2xl text-[#c59a35] sm:text-3xl"
+                  >
+                    03
+                  </span>
+
+                  <h3
+                    class="font-serif text-xl font-medium leading-snug tracking-[-0.02em] text-[#063536] sm:text-2xl"
+                  >
+                    What is included under Corporate Filing & Compliance
+                    services?
+                  </h3>
+                </div>
+
+                <span
+                  class="faq-icon mt-1 grid h-9 w-9 shrink-0 place-items-center rounded-full bg-[#063536] text-white transition-all duration-300"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    class="h-5 w-5 stroke-current"
+                    stroke-width="2.3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M12 5V19"></path>
+                    <path d="M5 12H19"></path>
+                  </svg>
+                </span>
+              </button>
+
+              <div
+                class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
+              >
+                <p
+                  class="px-5 pb-6 pl-[76px] text-[15px] leading-8 text-[#063536]/70 sm:px-7 sm:pb-7 sm:pl-[92px] sm:text-base"
+                >
+                  Corporate Filing & Compliance services may include assistance
+                  relating to corporate records, ROC documentation, board
+                  resolutions, compliance support, and maintenance of company
+                  legal records. Proper compliance management helps businesses
+                  maintain regulatory and procedural requirements. Requirements
+                  may vary depending on the business structure and applicable
+                  laws.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 04 -->
+            <div
+              class="faq-item overflow-hidden rounded-3xl border border-[#063536]/10 bg-white/80 shadow-[0_18px_50px_rgba(6,53,54,0.08)] backdrop-blur-sm"
+            >
+              <button
+                type="button"
+                class="faq-btn flex w-full items-start justify-between gap-5 px-5 py-5 text-left sm:px-7 sm:py-6"
+              >
+                <div class="flex gap-4">
+                  <span
+                    class="mt-1 shrink-0 font-serif text-2xl text-[#c59a35] sm:text-3xl"
+                  >
+                    04
+                  </span>
+
+                  <h3
+                    class="font-serif text-xl font-medium leading-snug tracking-[-0.02em] text-[#063536] sm:text-2xl"
+                  >
+                    How can legal consultation help startups and companies?
+                  </h3>
+                </div>
+
+                <span
+                  class="faq-icon mt-1 grid h-9 w-9 shrink-0 place-items-center rounded-full bg-[#063536] text-white transition-all duration-300"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    class="h-5 w-5 stroke-current"
+                    stroke-width="2.3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M12 5V19"></path>
+                    <path d="M5 12H19"></path>
+                  </svg>
+                </span>
+              </button>
+
+              <div
+                class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
+              >
+                <p
+                  class="px-5 pb-6 pl-[76px] text-[15px] leading-8 text-[#063536]/70 sm:px-7 sm:pb-7 sm:pl-[92px] sm:text-base"
+                >
+                  Legal consultation helps businesses understand legal
+                  requirements, documentation procedures, commercial risks, and
+                  compliance obligations connected with business operations. It
+                  may assist startups and companies in making informed decisions
+                  relating to contracts, transactions, and legal processes.
+                  Professional guidance also supports better business
+                  documentation management.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ 05 -->
+            <div
+              class="faq-item overflow-hidden rounded-3xl border border-[#063536]/10 bg-white/80 shadow-[0_18px_50px_rgba(6,53,54,0.08)] backdrop-blur-sm"
+            >
+              <button
+                type="button"
+                class="faq-btn flex w-full items-start justify-between gap-5 px-5 py-5 text-left sm:px-7 sm:py-6"
+              >
+                <div class="flex gap-4">
+                  <span
+                    class="mt-1 shrink-0 font-serif text-2xl text-[#c59a35] sm:text-3xl"
+                  >
+                    05
+                  </span>
+
+                  <h3
+                    class="font-serif text-xl font-medium leading-snug tracking-[-0.02em] text-[#063536] sm:text-2xl"
+                  >
+                    What types of commercial disputes can be handled?
+                  </h3>
+                </div>
+
+                <span
+                  class="faq-icon mt-1 grid h-9 w-9 shrink-0 place-items-center rounded-full bg-[#063536] text-white transition-all duration-300"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    class="h-5 w-5 stroke-current"
+                    stroke-width="2.3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M12 5V19"></path>
+                    <path d="M5 12H19"></path>
+                  </svg>
+                </span>
+              </button>
+
+              <div
+                class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
+              >
+                <p
+                  class="px-5 pb-6 pl-[76px] text-[15px] leading-8 text-[#063536]/70 sm:px-7 sm:pb-7 sm:pl-[92px] sm:text-base"
+                >
+                  Commercial disputes may include breach of contract matters,
+                  payment recovery issues, business disagreements, partnership
+                  disputes, vendor-related conflicts, and settlement
+                  negotiations. Legal assistance may also be provided relating
+                  to arbitration support and commercial legal notices. Each
+                  matter depends on the facts, agreements, and records involved.
+                </p>
+              </div>
+            </div>
           </div>
-
-          <span
-            class="faq-icon mt-1 grid h-9 w-9 shrink-0 place-items-center rounded-full bg-[#063536] text-white transition-all duration-300"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              class="h-5 w-5 stroke-current"
-              stroke-width="2.3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M12 5V19"></path>
-              <path d="M5 12H19"></path>
-            </svg>
-          </span>
-        </button>
-
-        <div
-          class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
-        >
-          <p
-            class="px-5 pb-6 pl-[76px] text-[15px] leading-8 text-[#063536]/70 sm:px-7 sm:pb-7 sm:pl-[92px] sm:text-base"
-          >
-            Commercial agreements help define the rights, obligations, payment
-            terms, responsibilities, and business relationships between parties.
-            Properly drafted agreements may help reduce misunderstandings and
-            future disputes. Legal review also helps businesses understand
-            potential legal and commercial risks.
-          </p>
         </div>
-      </div>
-
-      <!-- FAQ 03 -->
-      <div
-        class="faq-item overflow-hidden rounded-3xl border border-[#063536]/10 bg-white/80 shadow-[0_18px_50px_rgba(6,53,54,0.08)] backdrop-blur-sm"
-      >
-        <button
-          type="button"
-          class="faq-btn flex w-full items-start justify-between gap-5 px-5 py-5 text-left sm:px-7 sm:py-6"
-        >
-          <div class="flex gap-4">
-            <span
-              class="mt-1 shrink-0 font-serif text-2xl text-[#c59a35] sm:text-3xl"
-            >
-              03
-            </span>
-
-            <h3
-              class="font-serif text-xl font-medium leading-snug tracking-[-0.02em] text-[#063536] sm:text-2xl"
-            >
-              What is included under Corporate Filing & Compliance services?
-            </h3>
-          </div>
-
-          <span
-            class="faq-icon mt-1 grid h-9 w-9 shrink-0 place-items-center rounded-full bg-[#063536] text-white transition-all duration-300"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              class="h-5 w-5 stroke-current"
-              stroke-width="2.3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M12 5V19"></path>
-              <path d="M5 12H19"></path>
-            </svg>
-          </span>
-        </button>
-
-        <div
-          class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
-        >
-          <p
-            class="px-5 pb-6 pl-[76px] text-[15px] leading-8 text-[#063536]/70 sm:px-7 sm:pb-7 sm:pl-[92px] sm:text-base"
-          >
-            Corporate Filing & Compliance services may include assistance
-            relating to corporate records, ROC documentation, board resolutions,
-            compliance support, and maintenance of company legal records. Proper
-            compliance management helps businesses maintain regulatory and
-            procedural requirements. Requirements may vary depending on the
-            business structure and applicable laws.
-          </p>
-        </div>
-      </div>
-
-      <!-- FAQ 04 -->
-      <div
-        class="faq-item overflow-hidden rounded-3xl border border-[#063536]/10 bg-white/80 shadow-[0_18px_50px_rgba(6,53,54,0.08)] backdrop-blur-sm"
-      >
-        <button
-          type="button"
-          class="faq-btn flex w-full items-start justify-between gap-5 px-5 py-5 text-left sm:px-7 sm:py-6"
-        >
-          <div class="flex gap-4">
-            <span
-              class="mt-1 shrink-0 font-serif text-2xl text-[#c59a35] sm:text-3xl"
-            >
-              04
-            </span>
-
-            <h3
-              class="font-serif text-xl font-medium leading-snug tracking-[-0.02em] text-[#063536] sm:text-2xl"
-            >
-              How can legal consultation help startups and companies?
-            </h3>
-          </div>
-
-          <span
-            class="faq-icon mt-1 grid h-9 w-9 shrink-0 place-items-center rounded-full bg-[#063536] text-white transition-all duration-300"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              class="h-5 w-5 stroke-current"
-              stroke-width="2.3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M12 5V19"></path>
-              <path d="M5 12H19"></path>
-            </svg>
-          </span>
-        </button>
-
-        <div
-          class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
-        >
-          <p
-            class="px-5 pb-6 pl-[76px] text-[15px] leading-8 text-[#063536]/70 sm:px-7 sm:pb-7 sm:pl-[92px] sm:text-base"
-          >
-            Legal consultation helps businesses understand legal requirements,
-            documentation procedures, commercial risks, and compliance
-            obligations connected with business operations. It may assist
-            startups and companies in making informed decisions relating to
-            contracts, transactions, and legal processes. Professional guidance
-            also supports better business documentation management.
-          </p>
-        </div>
-      </div>
-
-      <!-- FAQ 05 -->
-      <div
-        class="faq-item overflow-hidden rounded-3xl border border-[#063536]/10 bg-white/80 shadow-[0_18px_50px_rgba(6,53,54,0.08)] backdrop-blur-sm"
-      >
-        <button
-          type="button"
-          class="faq-btn flex w-full items-start justify-between gap-5 px-5 py-5 text-left sm:px-7 sm:py-6"
-        >
-          <div class="flex gap-4">
-            <span
-              class="mt-1 shrink-0 font-serif text-2xl text-[#c59a35] sm:text-3xl"
-            >
-              05
-            </span>
-
-            <h3
-              class="font-serif text-xl font-medium leading-snug tracking-[-0.02em] text-[#063536] sm:text-2xl"
-            >
-              What types of commercial disputes can be handled?
-            </h3>
-          </div>
-
-          <span
-            class="faq-icon mt-1 grid h-9 w-9 shrink-0 place-items-center rounded-full bg-[#063536] text-white transition-all duration-300"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              class="h-5 w-5 stroke-current"
-              stroke-width="2.3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M12 5V19"></path>
-              <path d="M5 12H19"></path>
-            </svg>
-          </span>
-        </button>
-
-        <div
-          class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
-        >
-          <p
-            class="px-5 pb-6 pl-[76px] text-[15px] leading-8 text-[#063536]/70 sm:px-7 sm:pb-7 sm:pl-[92px] sm:text-base"
-          >
-            Commercial disputes may include breach of contract matters, payment
-            recovery issues, business disagreements, partnership disputes,
-            vendor-related conflicts, and settlement negotiations. Legal
-            assistance may also be provided relating to arbitration support and
-            commercial legal notices. Each matter depends on the facts,
-            agreements, and records involved.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-     
+      </section>
 
       <!-- Back To Top Button -->
       <button
