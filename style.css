@@ -465,8 +465,8 @@ body {
 
 /* Phone */
 .footer-phone {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 23px !important;
+  /* font-family: "Cormorant Garamond", serif; */
+  font-size: 18px !important;
   line-height: 1.2 !important;
   color: #ffffff !important;
   font-weight: 500 !important;
