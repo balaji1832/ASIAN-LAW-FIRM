@@ -365,54 +365,96 @@
               <span class="alf-form-label">Send Message</span>
               <h2>Get in Touch</h2>
 
-              <form action="#" method="post" class="alf-contact-form">
+              <form
+                action="submit-contact.php"
+                method="post"
+                class="alf-contact-form"
+                id="alfContactForm"
+                novalidate
+              >
                 <div class="alf-form-group">
                   <label for="name">Name</label>
+
                   <input
                     type="text"
                     id="name"
                     name="name"
                     placeholder="Enter your name"
+                    maxlength="150"
+                    autocomplete="name"
                     required
                   />
+
+                  <span class="alf-field-error" data-error-for="name"></span>
                 </div>
 
                 <div class="alf-form-group">
                   <label for="phone">Phone Number</label>
+
                   <input
                     type="tel"
                     id="phone"
                     name="phone"
                     placeholder="Enter your phone number"
+                    maxlength="20"
+                    inputmode="tel"
+                    autocomplete="tel"
                     required
                   />
+
+                  <span class="alf-field-error" data-error-for="phone"></span>
                 </div>
 
                 <div class="alf-form-group">
                   <label for="email">Email Address</label>
+
                   <input
                     type="email"
                     id="email"
                     name="email"
                     placeholder="Enter your email address"
+                    maxlength="190"
+                    autocomplete="email"
                     required
                   />
+
+                  <span class="alf-field-error" data-error-for="email"></span>
                 </div>
 
                 <div class="alf-form-group">
                   <label for="message">Message</label>
+
                   <textarea
                     id="message"
                     name="message"
                     rows="5"
                     placeholder="Write your message"
+                    maxlength="3000"
                     required
                   ></textarea>
+
+                  <span class="alf-field-error" data-error-for="message"></span>
+                </div>
+
+                <!-- Spam protection: users should not fill this field -->
+                <div class="alf-honeypot" aria-hidden="true">
+                  <label for="website">Website</label>
+
+                  <input
+                    type="text"
+                    id="website"
+                    name="website"
+                    tabindex="-1"
+                    autocomplete="off"
+                  />
                 </div>
 
                 <button type="submit" class="alf-submit-btn">
-                  Submit Message
-                  <svg viewBox="0 0 24 24">
+                  <span class="alf-submit-text">Submit</span>
+
+                  <span class="alf-submit-loader" aria-hidden="true"></span>
+
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M17 8l4 4-4 4M21 12H3"></path>
                   </svg>
                 </button>
@@ -421,6 +463,32 @@
           </div>
         </div>
       </section>
+
+      <!-- Toast notification -->
+      <div
+        id="alfToast"
+        class="alf-toast"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+      >
+        <div class="alf-toast-icon"></div>
+
+        <div class="alf-toast-content">
+          <strong class="alf-toast-title"></strong>
+          <p class="alf-toast-message"></p>
+        </div>
+
+        <button
+          type="button"
+          class="alf-toast-close"
+          aria-label="Close notification"
+        >
+          &times;
+        </button>
+      </div>
+
+      
     </main>
     <!-- Back To Top Button -->
     <button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to top">
@@ -513,14 +581,16 @@
 
             <ul class="footer-list footer-bullet-list">
               <li>
-                <a  target="_blank"
+                <a
+                  target="_blank"
                   href="https://www.facebook.com/share/1GtUhGNh26/?mibextid=wwXIfr"
                   >Facebook</a
                 >
               </li>
               <!-- <li><a href="#">Twitter</a></li> -->
               <li>
-                <a  target="_blank"
+                <a
+                  target="_blank"
                   href="https://www.instagram.com/asianlawfirm?igsh=d2hiNTEzNmduejBp&utm_source=qr"
                   >Instagram</a
                 >
@@ -540,5 +610,6 @@
     <script src="js/hamburger.js"></script>
     <script src="js/animation.js"></script>
     <script src="js/arrow.js"></script>
+    <script src="js/contact-form.js"></script>
   </body>
 </html>

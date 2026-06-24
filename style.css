@@ -4039,3 +4039,187 @@ body {
     width: 100%;
   }
 }
+
+
+.alf-field-error {
+  display: block;
+  min-height: 18px;
+  margin-top: 6px;
+  color: #c62828;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.alf-input-error {
+  border-color: #c62828 !important;
+  box-shadow: 0 0 0 3px rgba(198, 40, 40, 0.1);
+}
+
+.alf-honeypot {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+}
+
+.alf-submit-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.alf-submit-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.75;
+}
+
+.alf-submit-loader {
+  display: none;
+  width: 17px;
+  height: 17px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: alf-spin 0.7s linear infinite;
+}
+
+.alf-submit-btn.alf-is-loading .alf-submit-loader {
+  display: inline-block;
+}
+
+.alf-submit-btn.alf-is-loading svg {
+  display: none;
+}
+
+@keyframes alf-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Toast notification */
+
+.alf-toast {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 99999;
+  display: grid;
+  grid-template-columns: 44px 1fr 32px;
+  align-items: center;
+  gap: 12px;
+  width: min(420px, calc(100% - 32px));
+  padding: 16px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.16);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(24px);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.alf-toast-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.alf-toast-icon {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+.alf-toast-success .alf-toast-icon {
+  background: #e8f7ee;
+}
+
+.alf-toast-error .alf-toast-icon {
+  background: #fdecec;
+}
+
+.alf-toast-success .alf-toast-icon::after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 15px;
+  width: 9px;
+  height: 16px;
+  border-right: 3px solid #168447;
+  border-bottom: 3px solid #168447;
+  transform: rotate(45deg);
+}
+
+.alf-toast-error .alf-toast-icon::before,
+.alf-toast-error .alf-toast-icon::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 11px;
+  width: 20px;
+  height: 3px;
+  border-radius: 10px;
+  background: #c62828;
+}
+
+.alf-toast-error .alf-toast-icon::before {
+  transform: rotate(45deg);
+}
+
+.alf-toast-error .alf-toast-icon::after {
+  transform: rotate(-45deg);
+}
+
+.alf-toast-content {
+  min-width: 0;
+}
+
+.alf-toast-title {
+  display: block;
+  margin-bottom: 3px;
+  color: #171717;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.alf-toast-message {
+  margin: 0;
+  color: #606060;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.alf-toast-close {
+  align-self: start;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  color: #777777;
+  font-size: 23px;
+  line-height: 1;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.alf-toast-close:hover {
+  color: #111111;
+}
+
+@media (max-width: 576px) {
+  .alf-toast {
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
+    width: auto;
+  }
+}
